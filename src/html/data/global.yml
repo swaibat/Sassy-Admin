@@ -1,0 +1,12 @@
+- title: Components
+  nav:
+    - name: alerts
+    - name: badges
+    - name: buttons
+    - name: cards
+    - name: carousel
+    - name: dialog
+    - name: pagination
+    - name: progress
+    - name: spinners
+    - name: typography
