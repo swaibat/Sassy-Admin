@@ -13,7 +13,30 @@
         height: 75vh;
         width: 100%;
     }
+    .nav-item.active{
+      background: #007bff09;
+    }
+    .nav-item.active a{
+      color: #007bff !important;
+    }
+    .nav-item.active::before {
+      position: absolute;
+      content: " ";
+      height: 35px;
+      width: 2.5px;
+      left: 0;
+      background-color: #007bff;
+      opacity: 1;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      z-index: 1030;
+      margin-top: .2rem;
+    }
   }
+  
   
 .nav-second-level{
     list-style: none;
@@ -38,3 +61,6 @@
     }
   
   }
+
+  
+  
