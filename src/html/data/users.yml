@@ -1,0 +1,11 @@
+- name: Theo
+  status: online
+  img: theo
+
+- name: Bob
+  status: online
+  img: bob
+
+- name: charity
+  status: online
+  img: charity
