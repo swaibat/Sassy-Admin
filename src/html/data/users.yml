@@ -1,11 +1,14 @@
 - name: Theo
   status: online
   img: theo
+  icon: fas fa-envelope
 
 - name: Bob
   status: online
   img: bob
+  icon: fas fa-envelope
 
 - name: charity
   status: online
   img: charity
+  icon: fas fa-envelope

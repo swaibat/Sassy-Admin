@@ -1,14 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
-    <a class="navbar-brand p-0" href="#"><img class="avatar" src="{{root}}assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
-    <div class="hamburger-toggle"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
+    
+    <!-- [ Left-navigation ] -->
+      <a class="navbar-brand p-0 mr-lg-5" href="#"><img class="avatar" src="{{root}}assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
+      <div class="d-flex ml-4 lr-only">
+        <div class="hamburger-toggle"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
+        <input class="w-100 mx-4 border-0" type="text" name="" placeholder="search . . .">
+    </div>
+    <!-- [ side-navigation ] -->
     <div class="collapse navbar-collapse  order-sm-last order-lg-0 " id="navbarCollapse">
         <ul class="d-flex flex-column  navbar-nav mr-auto sidenav bg-white" id="navAccordion">
-            <li class="nav-item p-2 mt-2 {{#ifpage 'index'}}active{{/ifpage}} ">
-                <a class="nav-link" href="/index.html" data-toggle="tooltip" title="dashboard"><i class="fas fa-house-damage"></i><span class="pl-3 title">dashboard</span></a>
-            </li>
             {{#each navigation}}
-            <li class="nav-item p-2" id="hasSubItems" data-toggle="collapse" data-target="#{{title}}" aria-controls="{{title}}" aria-expanded="false">
-                <a class="nav-link nav-link-collapse  {{#ifpage '{{#each nav}}{{name}}{{/each}}' }}active{{/ifpage}}" href="#" data-toggle="tooltip" title="{{title}}"><i class="{{icon}}"></i><span class="pl-3 title">{{title}}</span></a>
+            <li class="nav-item p-1 {{#ifpage page }}active{{/ifpage}}" id="hasSubItems" data-toggle="collapse" data-target="#{{title}}" aria-controls="{{title}}" aria-expanded="false">
+                <a href="{{link}}" class="nav-link nav-link-collapse" data-toggle="tooltip" title="{{title}}"><i class="{{icon}}"></i><span class="pl-3 title">{{title}}</span></a>
                 <ul class="nav-second-level collapse {{#ifpage '{{#each nav}}{{name}}{{/each}}' }}show{{/ifpage}}" id="{{title}}" data-parent="#navAccordion">
                     {{#each nav}}
                     <li><a class="nav-link {{#ifpage '{{name}}'}}active{{/ifpage}}" href="{{root}}{{name}}.html"><span class="nav-link-text "><span class="nav-check"></span>{{name}}</span></a></li>
@@ -16,72 +19,42 @@
                 </ul>
             </li>
             {{/each}}
-            <li class="nav-item pt-2 ">
-                <a class="nav-link" href="{{root}}docs.html" data-toggle="tooltip" title="documentation"><i class="fas fa-house-damage"></i><span class="pl-3 title">Docs</span></a>
-            </li>
         </ul>
     </div>
+
+    <!-- [ Right-navigation ] -->
     <div class="dropdown ml-lg-auto mr-lg-5">
         <div id="notification" class="carousel-fade" data-ride="carousel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="carousel-inner">
-                <a href="/hello" class="carousel-item active d-flex">
+                <a href="#" class="carousel-item active d-flex">
                     <img class="avatar rounded-circle" src="{{root}}assets/images/bob.jpg" alt="" width="40">
-                    <span class="badge  badge-primary badge-pill  pin-badge mt-3 ml-n2 "><i class="fas fa-comment"></i></span>
+                    <span class="badge  badge-primary badge-circle  pin-badge mt-3 ml-n2 "><i class="fas fa-comment"></i></span>
                 </a>
-                <a href="/hello" class="carousel-item d-flex">
+                <a href="#" class="carousel-item d-flex">
                     <img class="avatar rounded-circle" src="{{root}}assets/images/theo.jpg" alt="" width="40">
-                    <span class="badge badge-danger text-white badge-pill pin-badge mt-3 ml-n2"><i class="fas fa-envelope"></i></span>
+                    <span class="badge badge-danger text-white badge-circle pin-badge mt-3 ml-n2"><i class="fas fa-envelope"></i></span>
                 </a>
-                <a href="/hello" class="carousel-item d-flex">
+                <a href="#" class="carousel-item d-flex">
                     <img class="avatar rounded-circle" src="{{root}}assets/images/charity.jpg" alt="" width="40">
-                    <span class="badge badge-danger text-white badge-pill pin-badge mt-3 ml-n2"><i class="fas fa-envelope"></i></span>
+                    <span class="badge badge-danger text-white badge-circle pin-badge mt-3 ml-n2"><i class="fas fa-envelope"></i></span>
                 </a>
             </div>
         </div>
-        <div class="dropdown-menu">
+
+        <div class="dropdown-menu notification">
             <div class="dropdown-item">
                 <small class="mb-0 font-weight-normal float-left"> 7 unread mails</small>
                 <span class="badge badge-info badge-pill float-right">View all</span>
             </div>
+            {{#each users}}
             <a class="dropdown-item d-flex">
-                <div class="ml-n3">
-                    <img src="{{root}}assets/images/86.jpg" alt="image" class="avatar rounded-circle">
-                </div>
+                <div class="ml-n3"><img src="{{root}}assets/images/{{img}}.jpg" alt="image" class="avatar rounded-circle"></div>
                 <div class="flex-grow ml-2">
-                    <b class="pl-2 p-0">John
-                          <small class="float-right m-0">1 Minutes ago</small>
-                        </b>
-                    <p class="m-0">
-                        The meeting is cancelled
-                    </p>
+                    <b class="pl-2 p-0">{{name}}<small class="float-right m-0">1 Minutes ago</small></b>
+                    <p class="m-0">The meeting is cancelled</p>
                 </div>
             </a>
-            <a class="dropdown-item d-flex">
-                <div class="ml-n3">
-                    <img src="{{root}}assets/images/12.jpg" alt="image" class="avatar rounded-circle">
-                </div>
-                <div class="flex-grow ml-2">
-                    <b class="pl-2 p-0">John
-                            <small class="float-right m-0">1 Minutes ago</small>
-                          </b>
-                    <p class="m-0">
-                        The meeting is cancelled
-                    </p>
-                </div>
-            </a>
-            <a class="dropdown-item d-flex">
-                <div class="ml-n3">
-                    <img src="{{root}}assets/images/2.jpg" alt="image" class="avatar rounded-circle">
-                </div>
-                <div class="flex-grow ml-2">
-                    <b class="pl-2 p-0">John
-                            <small class="float-right m-0">1 Minutes ago</small>
-                          </b>
-                    <p class="m-0">
-                        The meeting is cancelled
-                    </p>
-                </div>
-            </a>
+            {{/each}}
         </div>
     </div>
     <!-- user account -->

@@ -3,17 +3,16 @@
 <html lang="en">
     {{>head}}
 <body>
-    <main role="main" class="{{#unlesspage 'login' 'register' 'contact'  '404' 'faq'}}content-wrapper{{/unlesspage}}">
-        {{#unlesspage 'login' 'register' 'contact'  '404' 'faq'}}
+    {{#unlesspage 'login' 'register' 'contact'  '404' 'faq'}}
+    <main role="main" class="content-wrapper">
         {{> navigation}}
         {{> breadcrumb}}
         <div class="row page-content mx-3">
-        {{/unlesspage}}
         {{> body}}
          </div>
     </main>
-    {{#unlesspage 'login' 'register' 'contact' '404'}}
-    {{> footer}}
     {{/unlesspage}}
+    {{> body}}
+    {{> footer}}
     </body>
 </html>

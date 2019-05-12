@@ -10,19 +10,19 @@
     border-top: solid 1px #f7f9fb;
     @include media-breakpoint-down(lg) {
         box-shadow: none;
-        height: 75vh;
+        height: 70vh;
         width: 100%;
     }
     .nav-item.active{
-      background: #007bff09;
+      background: lighten( $blue, 45% );
     }
     .nav-item.active a{
-      color: #007bff !important;
+      color: $blue !important;
     }
     .nav-item.active::before {
       position: absolute;
       content: " ";
-      height: 35px;
+      height: 33px;
       width: 2.5px;
       left: 0;
       background-color: #007bff;
@@ -33,7 +33,7 @@
       -o-transition: all .5s ease-in-out;
       transition: all .5s ease-in-out;
       z-index: 1030;
-      margin-top: .2rem;
+      margin-top: .1rem;
     }
   }
   
@@ -61,6 +61,5 @@
     }
   
   }
-
   
   
