@@ -3,7 +3,10 @@
 <html lang="en">
     {{>head}}
 <body>
-    {{#unlesspage 'login' 'register' 'contact'  '404' 'faq'}}
+    {{#ifpage 'login' 'register' 'contact'  '404' 'faq'}}
+        {{> body}}
+        {{> footer}}
+    {{/ifpage}}
     <main role="main" class="content-wrapper">
         {{> navigation}}
         {{> breadcrumb}}
@@ -11,8 +14,6 @@
         {{> body}}
          </div>
     </main>
-    {{/unlesspage}}
-    {{> body}}
     {{> footer}}
     </body>
 </html>

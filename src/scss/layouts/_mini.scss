@@ -1,0 +1,38 @@
+.mini{
+    .navbar-brand{
+        width: 3rem;
+        margin-left: -.6rem;
+        border-right: solid 1px #007bff;
+        b{
+            display: none;
+        }
+      }
+    .content-wrapper {
+        margin-left: 3.7rem;
+    }
+    .sidenav {
+        width: 3.5rem;
+        white-space: nowrap;
+        .nav-link-collapse{
+            margin-left: .5rem;
+        }
+        .nav-second-level.collapse  {
+            margin-left: 4rem !important;
+            position: absolute;
+            background: gainsboro;
+            padding: .1rem .5rem;
+            min-width: 9rem;
+        }
+        .title{
+            background: white;
+            margin-left: 2rem;
+            padding: .5rem 3rem;
+            padding-left: 3rem;
+            min-width: 10rem;
+        }
+    }
+    .footer{
+        margin-left: 3.5rem;
+        width: calc(100% - 3.5rem);
+    }
+}

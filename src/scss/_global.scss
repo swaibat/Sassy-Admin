@@ -7,7 +7,12 @@ body {
   padding-top: 4.5rem;
   margin-bottom: 4.5rem;
 }
-
+.navbar-brand{
+  width: 10rem;
+  @include media-breakpoint-down(lg) {
+    width: 3rem;
+  }
+}
 .avatar{
   width: 2.5rem;
   height: 2.5rem;
@@ -68,9 +73,6 @@ body {
   .account{
     margin-left: -5rem;
   }
-  .lr-only{
-    display: none;
-  }
   .bg-sm-white{
     background:white;
   }
@@ -98,31 +100,6 @@ body {
   }
 }
 
-.slide-fwd-center {
-	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
- @-webkit-keyframes slide-fwd-center {
-  0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-  }
-  100% {
-    -webkit-transform: translateZ(160px);
-            transform: translateZ(160px);
-  }
-}
-@keyframes slide-fwd-center {
-  0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-  }
-  100% {
-    -webkit-transform: translateZ(160px);
-            transform: translateZ(160px);
-  }
-}
 
 
 

@@ -13,11 +13,16 @@
         height: 70vh;
         width: 100%;
     }
+    .nav-item{
+      &:hover{
+        background: lighten( $primary, 49% );
+      }
+    }
     .nav-item.active{
-      background: lighten( $blue, 45% );
+      background: lighten( $primary, 45% );
     }
     .nav-item.active a{
-      color: $blue !important;
+      color: $primary !important;
     }
     .nav-item.active::before {
       position: absolute;
@@ -25,7 +30,7 @@
       height: 33px;
       width: 2.5px;
       left: 0;
-      background-color: #007bff;
+      background-color: $primary;
       opacity: 1;
       -webkit-transition: all .5s ease-in-out;
       -moz-transition: all .5s ease-in-out;
