@@ -9,17 +9,19 @@
     </div>
     <!-- [ side-navigation ] -->
     <div class="collapse navbar-collapse  order-sm-last order-lg-0 " id="navbarCollapse">
-        <ul class="d-flex flex-column  navbar-nav mr-auto sidenav bg-white" id="navAccordion">
+        <ul class="d-flex  navbar-nav mr-auto sidenav bg-white w-100" id="navAccordion">
+            <div class="bg-white d-flex">
             {{#each navigation}}
             <li class="nav-item p-1  {{#ifpage page }}active{{/ifpage}}" id="hasSubItems" data-toggle="collapse" data-target="#{{title}}" aria-controls="{{title}}" aria-expanded="false">
                 <a href="{{link}}" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="{{title}}"><i class="{{icon}}"></i><span class="pl-3 title">{{title}}</span></a>
-                <ul class="nav-second-level rounded-bottom collapse {{#ifpage '{{#each nav}}{{name}}{{/each}}' }}show{{/ifpage}}" id="{{title}}" data-parent="#navAccordion">
+                <ul class="nav-second-level position-absolute bg-white rounded-bottom collapse {{#ifpage '{{#each nav}}{{name}}{{/each}}' }}show{{/ifpage}}" id="{{title}}" data-parent="#navAccordion">
                     {{#each nav}}
                     <li><a class="nav-link {{#ifpage '{{name}}'}}active{{/ifpage}}" href="{{root}}{{name}}.html"><span class="nav-link-text "><span class="nav-check"></span>{{name}}</span></a></li>
                     {{/each}}
                 </ul>
             </li>
             {{/each}}
+        </div>
         </ul>
     </div>
 
