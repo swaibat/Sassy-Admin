@@ -48,14 +48,14 @@
     - name: data_tables
 
 - title: notifications
-  icon: far fa-comment-alt
+  icon: fas fa-comment-alt
   link: '#'
   nav:
     - name: sweet_alert
     - name: toastr
 
 - title: pages
-  icon: far fa-file
+  icon: fas fa-file-powerpoint
   link: '#'
   nav:
     - name: contact
