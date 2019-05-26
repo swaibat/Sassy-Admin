@@ -1,1 +1,269 @@
-<h3>Main</h3>
+---
+title : main
+nav : true
+---
+
+
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card card1 shadow-sm">
+            <div class="card-header bg-primary pt-1 pb-1">
+                <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+            </div>
+
+            <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 box-shadow-balanced d-flex flex-row">
+                <div class="mt-1 ml-2 btn-pill alert-primary text-primary rounded "><i class="far fa-image"></i></div>
+                <div class="pb-4 px-3">
+                    <b class="d-block  counter-value">$120</b>
+                    <small class="text-primary ">+48.34%</small>
+                </div>
+                <div class="chart py-2  flex-fill">
+                    <div class="pl-1">
+                        <canvas id="myChartC" class="w-100" height="50"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end of card     -->
+
+    <div class="col-lg-3 col-md-6 mb-3 mb-4">
+        <div class="card card1 shadow-sm">
+            <div class="card-header bg-warning pt-1 pb-1">
+                <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+            </div>
+
+            <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 box-shadow-balanced  d-flex flex-row">
+                <div class="mt-1 ml-2 btn-pill alert-warning text-warning rounded "><i class="far fa-image"></i></div>
+                <div class="pb-4 px-3">
+                    <b class="d-block  counter-value">$120</b>
+                    <small class="text-warning ">+48.34%</small>
+                </div>
+                <div class="chart py-2  flex-fill">
+                    <div class="pl-1">
+                        <canvas id="myChartC" class="w-100" height="50"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end of card     -->
+    <div class="col-lg-3 col-md-6 mb-3 mb-4">
+        <div class="card card1 shadow-sm">
+            <div class="card-header bg-info pt-1 pb-1">
+                <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+            </div>
+
+            <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 box-shadow-balanced d-flex flex-row">
+                <div class="mt-1 ml-2 btn-pill alert-info text-info rounded "><i class="far fa-image"></i></div>
+                <div class="pb-4 px-3">
+                    <b class="d-block  counter-value">$120</b>
+                    <small class="text-info ">+48.34%</small>
+                </div>
+                <div class="chart py-2  flex-fill">
+                    <div class="pl-1">
+                        <canvas id="myChartC" class="w-100" height="50"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end of card     -->
+
+    <div class="col-lg-3 col-md-6 mb-3 mb-4">
+        <div class="card card1 shadow-sm">
+            <div class="card-header bg-danger pt-1 pb-1">
+                <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+            </div>
+
+            <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 box-shadow-balanced d-flex flex-row">
+                <div class="mt-1 ml-2 btn-pill alert-danger text-danger rounded "><i class="far fa-image"></i></div>
+                <div class="pb-4 px-3">
+                    <b class="d-block  counter-value">$120</b>
+                    <small class="text-danger ">+48.34%</small>
+                </div>
+                <div class="chart py-2  flex-fill">
+                    <div class="pl-1">
+                        <canvas id="myChartC" class="w-100" height="50"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="card overflow-hidden  mb-4 shadow-sm">
+            <div class="card-header bg-white border-0">
+                <div class="btn-group text-dark">
+                    <span class="dot p-2 bg-warning rounded-circle mx-2"></span><small>Users</small>
+                    <span class="dot p-2 bg-primary rounded-circle mx-2 ml-3"></span><small>Sales</small>
+                </div>
+                <div class="btn-group  btn-group-toggle float-right" data-toggle="buttons">
+                    <label class="btn btn-xs btn-primary active">
+                        <input type="checkbox" autocomplete="off">weekly
+                    </label>
+                    <label class="btn btn-xs btn-primary">
+                        <input type="checkbox" autocomplete="off"> Monthly
+                    </label>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <canvas id="myChart" class="w-100" height="300"></canvas>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-sm-4">
+            <div class="card-header card-header-sm  bg-white b-0">
+                Radar
+                <div class="btn-group-xs float-right text-white">
+					<button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+					<button type="button" class=" btn btn-xs btn-primary"><span>&#10006;</span> </button>
+				</div>
+            </div>
+            <!--c-head-->
+            <div class="card-body table-responsive mt-n4 collapse show">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>username</th>
+                            <th>email</th>
+                            <th>Reg. date</th>
+                            <th style="width: 45px">Operation</th>
+                        </tr>
+                        <tr>
+                            <td><img class="rounded-circle" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAABM0lEQVRYR+2WMUtCYRSGHweREN20IBokFxPaIghazK3fkIttTk5uDm5NTW65JP2EtnIJhGgL1KVwiCCFBgkJJ0Pio5Ques4dlDjffLk893nf9+MGxleMWZETMBiPJMyMV0XNjJmRXl//rDP7F7Cdh+ca3J9KZUw978/MegYOLmFtEwZtuE4vEcZZGb1DMALtM3gsq4H8mTluQXgLOueQKsLwxZcdPcxuBXZK0L+DRhYc2EMBunWVHT1M5gbihz/RuMjebr/hFEcHkziBvep0LK7MwSgo7ehgJlY2jry/XTlzOczvOXvhfL5CMwe9higsOcy8bkyKHEmqZi6DWaQXbmUfT+KZy2Bm5/xXCA44FBPbkcEsGsG8KO0fWLQlkMUkfLn0cYOxH3LrjNSAdUZqbKXumS9tTbJtcRjAuwAAAABJRU5ErkJggg==" alt="Andy"></td>
+                            <td><span class="mr-3">Andy</span></td>
+                            <td><small>andy@gmail.com</small></td>
+                            <td>
+                                <span>12 feb, 2019</span>
+                            </td>
+                            <td><span class="badge alert-primary text-primary px-2">approved</span></td>
+                        </tr>
+                        <tr>
+                            <td><img class="rounded-circle" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAA90lEQVRYR+2WPQ6CQBBGHwegpCKegFsQrgEVnQews6DjAJQ0cg5s6Oj1AsaK0o4GQwyVbHQ24l+Getl9fPNmFgeGgS95HIUxVEKTMSmqyWgy0vH1287EMRQFuO78d5clpKk0k9t6cTKPYMZN6xqiSA5kDdO29wdmGWw20HWQJLDfy4BeCjMefTjAagXrNVTVB2GmEp5OEAQykEWcuVzsUlkEpu8hz2G7fWMycwKHIex24Hl2QC8XeOqoppG39//CTGXyfbCZxNbJmK6DUdvz+c1DzwRzPNrNGKvWljfs82+Iy/T81vKVCqP/wFJr1Bl1Rp2RJmBafwUz5J3eUqGFmgAAAABJRU5ErkJggg==" alt="bob"></td>
+                            <td><span class="mr-3">Bob</span><small>bob@gmail.com</small></td>
+                            <td><small>bob@gmail.com</small></td>
+                            <td><span>12 feb, 2019</span></td>
+                            <td><span class="badge alert-primary text-primary px-2">aproved</span></td>
+                        </tr>
+                        <tr>
+                            <td><img class="rounded-circle" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAhUlEQVRYR+2WwQkAIQwE16ZswHIsyzbsygI8/BshC+G8Y30LbsZJNE1g4pKVFMa4CZGxFBUZkfGOrx840ztQil34GECtQGsuOByZ68LkTFV/QsWTUZgd15MzpLzrGP6arG56JYycsZwRGZFxPWkxm7k5E5OFHHoKE0RAH3IvWHWTnPm0Mw+0y4HeWgYtbgAAAABJRU5ErkJggg==" alt="faties"></td>
+                            <td><span class="mr-3">Faties</span></td>
+                            <td><small>fatie@gmail.com</small></td>
+                            <td>
+                                <span>12 feb, 2019</span>
+                            </td>
+                            <td><span class="badge alert-primary text-primary px-2">aproved</span></td>
+                        </tr>
+                        <tr>
+                            <td><img class="rounded-circle" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAA8ElEQVRYR2NkaGD4zzBIAOOoY3DExGjI4EqioyEzGjKkFl9DO83sidvD4KzojNXTn399Zsjems2w+NJiUgMFrJ7kkMHnGJgL5p6fy5CyKYVkB5HlGDNpM6whMMdvDkOyYTLDr7+/GDqPdjLU7a8jyUFUdQzIZpiD9t7fy+CyyGVgHeOk6MSwKHAR2BFx6+MY9t3fR7SDqB4yIJuvZl1lkOWXJTkxjzqGatUBKGvjyk0gSwZVmhk0uQnmEHJLYrISMK7qYEBK4EFTNxFdgpGhkORoIsMOorWMOoZqhR7RYU6GwtFoGo0mUpPNaJoZEmkGAMEyxIEIiLLMAAAAAElFTkSuQmCC" alt="Doe"></td>
+                            <td><span class="mr-3">doe</span></td>
+                            <td><small>doe@gmail.com</small></td>
+                            <td>
+                                <span>12 feb, 2019</span>
+                            </td>
+                            <td><span class="badge alert-warning text-warning px-2">pending</span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- chat requests -->
+    <div class="col-lg-4">
+        <div class="card h-1 mb-4 shadow-sm">
+            <div class="card-header card-header-sm">Countries</div>
+            <div class="card-body">
+                <small>United states</small>
+                <div class="progress progress-sm">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small>United states</small>
+                <div class="progress progress-sm">
+                    <div class="progress-bar primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small>United states</small>
+                <div class="progress progress-sm">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-white border-0">chat Requests</div>
+            <div class="card-body chat p-2">
+                <a class="d-flex py-3">
+                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
+                    <div class="flex-grow-1 ml-2">
+                        <b class="pl-2 p-0">John</b>
+                        <p class="m-0">The meeting . . .</p>
+                    </div>
+                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
+                </a>
+                <!-- end of user -->
+                <a class="d-flex py-3">
+                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
+                    <div class="flex-grow-1 ml-2">
+                        <b class="pl-2 p-0">John</b>
+                        <p class="m-0">The meeting . . .</p>
+                    </div>
+                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
+                </a>
+                <!-- end of user -->
+                <a class="d-flex py-3">
+                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
+                    <div class="flex-grow-1 ml-2">
+                        <b class="pl-2 p-0">John</b>
+                        <p class="m-0">The meeting . . .</p>
+                    </div>
+                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
+                </a>
+                <!-- end of user -->
+                <a class="d-flex py-3">
+                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
+                    <div class="flex-grow-1 ml-2">
+                        <b class="pl-2 p-0">John</b>
+                        <p class="m-0">The meeting . . .</p>
+                    </div>
+                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
+                </a>
+                <!-- end of user -->
+                <a class="d-flex py-3">
+                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
+                    <div class="flex-grow-1 ml-2">
+                        <b class="pl-2 p-0">John</b>
+                        <p class="m-0">The meeting . . .</p>
+                    </div>
+                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
+                </a>
+                <!-- end of user -->
+                <a class="d-flex py-3">
+                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
+                    <div class="flex-grow-1 ml-2">
+                        <b class="pl-2 p-0">John</b>
+                        <p class="m-0">The meeting . . .</p>
+                    </div>
+                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
+                </a>
+                <!-- end of user -->
+                <a class="d-flex py-3">
+                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
+                    <div class="flex-grow-1 ml-2">
+                        <b class="pl-2 p-0">John</b>
+                        <p class="m-0">The meeting . . .</p>
+                    </div>
+                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
+                </a>
+                <!-- end of user -->
+                <a class="d-flex py-3">
+                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
+                    <div class="flex-grow-1 ml-2">
+                        <b class="pl-2 p-0">John</b>
+                        <p class="m-0">The meeting . . .</p>
+                    </div>
+                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
+                </a>
+                <!-- end of user -->
+            </div>
+        </div>
+    </div>
