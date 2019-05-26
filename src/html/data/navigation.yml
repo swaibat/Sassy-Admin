@@ -1,0 +1,68 @@
+- title: dashboard
+  page: 'index'
+  icon: fas fa-house-damage
+  link: index.html
+
+- title: Components
+  icon: fas fa-layer-group
+  link: '#'
+  nav:
+    - name: alerts
+    - name: badges
+    - name: buttons
+    - name: cards
+    - name: carousel
+    - name: dialog
+    - name: pagination
+    - name: progress
+    - name: spinners
+    - name: typography
+
+- title: utilities
+  icon: fas fa-wrench
+  link: '#'
+  nav:
+    - name: grid
+    - name: flex-box
+
+- title: forms
+  icon: fas fa-file-alt
+  link: '#'
+  nav:
+    - name: basic_forms
+    - name: iconic_form
+    - name: text_editors
+
+- title: charts
+  icon: fas fa-chart-pie
+  link: '#'
+  nav:
+    - name: chartjs
+    - name: sparkline
+
+- title: tables
+  icon: fas fa-table
+  link: '#'
+  nav:
+    - name: bootstrap_tables
+    - name: data_tables
+
+- title: notifications
+  icon: fas fa-comment-alt
+  link: '#'
+  nav:
+    - name: sweet_alert
+    - name: toastr
+
+- title: pages
+  icon: fas fa-file-powerpoint
+  link: '#'
+  nav:
+    - name: contact
+    - name: faq
+    - name: login
+    - name: register
+
+- title: Docs
+  icon: far fa-file
+  link: docs.html

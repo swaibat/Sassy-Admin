@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+    <!-- [ Left-navigation ] -->
+      <a class="navbar-brand p-0" href="#"><img class="avatar" src="{{root}}assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
+      <div class="d-flex lr-only">
+            <div class="js-hamburger mt-2">
+                <div class="hamburger-toggle"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
+            </div>
+        <input class="w-100 mx-4 border-0" type="text" name="" placeholder="search . . .">
+    </div>
+    <!-- [ side-navigation ] -->
+    <div class="collapse navbar-collapse  order-sm-last order-lg-0 " id="navbarCollapse">
+        <ul class="navbar-nav mr-auto sidenav bg-white" id="navAccordion">
+            {{#each navigation}}
+            <li class="nav-item p-1  {{#ifpage page }}active{{/ifpage}}" id="hasSubItems" data-toggle="collapse" data-target="#{{title}}" aria-controls="{{title}}" aria-expanded="false">
+                <a href="{{link}}" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="{{title}}"><i class="{{icon}}"></i><span class="pl-3 title">{{title}}</span></a>
+                <ul class="nav-second-level bg-white rounded-bottom collapse {{#ifpage '{{#each nav}}{{name}}{{/each}}' }}show{{/ifpage}}" id="{{title}}" data-parent="#navAccordion">
+                    {{#each nav}}
+                    <li><a class="nav-link {{#ifpage '{{name}}'}}active{{/ifpage}}" href="{{root}}{{name}}.html"><span class="nav-link-text "><span class="nav-check"></span>{{name}}</span></a></li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+            <div class="d-flex fixed-bottom m-2 w-100">
+                <button class="btn btn-sm bg-light mr-2">hello</button>
+                <button class="btn btn-sm bg-light float-right ml-5">hello</button>
+            </div>
+        </ul>
+    </div>
+
+    <!-- [ Right-navigation ] -->
+    <div class="dropdown ml-lg-auto mr-lg-5">
+        <div id="notification" class="carousel-fade" data-ride="carousel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="carousel-inner">
+                <a href="#" class="carousel-item active d-flex">
+                    <img class="avatar rounded-circle" src="{{root}}assets/images/bob.jpg" alt="" width="40">
+                    <span class="badge  badge-primary badge-circle  pin-badge mt-3 ml-n2 "><i class="fas fa-comment"></i></span>
+                </a>
+                <a href="#" class="carousel-item d-flex">
+                    <img class="avatar rounded-circle" src="{{root}}assets/images/theo.jpg" alt="" width="40">
+                    <span class="badge badge-danger text-white badge-circle pin-badge mt-3 ml-n2"><i class="fas fa-envelope"></i></span>
+                </a>
+                <a href="#" class="carousel-item d-flex">
+                    <img class="avatar rounded-circle" src="{{root}}assets/images/charity.jpg" alt="" width="40">
+                    <span class="badge badge-danger text-white badge-circle pin-badge mt-3 ml-n2"><i class="far fa-comment"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-menu notification">
+            <div class="dropdown-item">
+                <small class="mb-0 font-weight-normal float-left"> 7 unread mails</small>
+                <span class="badge badge-info badge-pill float-right">View all</span>
+            </div>
+            {{#each users}}
+            <a class="dropdown-item d-flex">
+                <div class="ml-n3"><img src="{{root}}assets/images/{{img}}.jpg" alt="image" class="avatar rounded-circle"></div>
+                <div class="flex-grow ml-2">
+                    <b class="pl-2 p-0">{{name}}<small class="float-right m-0">1 Minutes ago</small></b>
+                    <p class="m-0">The meeting is cancelled</p>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+    <!-- user account -->
+    <div class="dropdown">
+        <button class="btn  dropdown-toggle p-0 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="{{root}}assets/images/user.svg" alt="" width="40">
+        </button>
+        <div class="dropdown-menu account" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+</nav>

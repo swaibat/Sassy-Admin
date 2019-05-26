@@ -1,0 +1,26 @@
+// variables
+@import "variables";
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Import fontawesome
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// global
+@import "global";
+
+// Utilities
+@import "components";
+@import "utilities";
+@import "mixins";
+@import "partials";
+
+// components
+@import "humburger";
+
+// layouts
+@import "layouts";

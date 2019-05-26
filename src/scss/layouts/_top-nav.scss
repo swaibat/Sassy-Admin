@@ -1,0 +1,28 @@
+.top-nav{
+    .js-hamburger{
+        display: none;
+    }
+    .content-wrapper {
+        margin-left: 1rem;
+        margin-top: 2.2rem;
+    }
+    .sidenav {
+        left: 0;
+        width: 100%;
+        position: absolute;
+        margin-top: 6.7rem;
+        justify-content: space-around !important;
+        .nav-second-level{
+            width: 10rem;
+            margin-top: .4rem;
+            position: absolute;
+        }
+        i{
+            margin-top: .3rem;
+        }
+    }
+    footer{
+        width: 100%;
+        margin:0;
+    }
+}
