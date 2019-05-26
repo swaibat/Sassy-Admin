@@ -3,8 +3,18 @@
     height: 1.2rem;
 }
 .customizer{
-bottom: 4.5rem;
-font-size: 14px;
-position: fixed;
-right: .4rem;
+    bottom: 4.5rem;
+    font-size: 14px;
+    position: fixed;
+    right: .4rem;
+    span{  
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
 }
+
+.customizer .collapse{
+    width:13rem;
+}
+
