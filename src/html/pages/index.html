@@ -2,14 +2,13 @@
 title : main
 nav : true
 ---
-
-
-    <div class="col-lg-3 col-md-6 mb-4">
+<link rel="stylesheet" href="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/nvd3/build/nv.d3.css">
+<div class="col-lg-3 col-md-6 mb-4">
         <div class="card card1 shadow-sm">
             <div class="card-header bg-primary pt-1 pb-1">
                 <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
             </div>
-
+    
             <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 box-shadow-balanced d-flex flex-row">
                 <div class="mt-1 ml-2 btn-pill alert-primary text-primary rounded "><i class="far fa-image"></i></div>
                 <div class="pb-4 px-3">
@@ -25,13 +24,13 @@ nav : true
         </div>
     </div>
     <!-- // end of card     -->
-
+    
     <div class="col-lg-3 col-md-6 mb-3 mb-4">
         <div class="card card1 shadow-sm">
             <div class="card-header bg-warning pt-1 pb-1">
                 <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
             </div>
-
+    
             <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 box-shadow-balanced  d-flex flex-row">
                 <div class="mt-1 ml-2 btn-pill alert-warning text-warning rounded "><i class="far fa-image"></i></div>
                 <div class="pb-4 px-3">
@@ -52,7 +51,7 @@ nav : true
             <div class="card-header bg-info pt-1 pb-1">
                 <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
             </div>
-
+    
             <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 box-shadow-balanced d-flex flex-row">
                 <div class="mt-1 ml-2 btn-pill alert-info text-info rounded "><i class="far fa-image"></i></div>
                 <div class="pb-4 px-3">
@@ -68,13 +67,13 @@ nav : true
         </div>
     </div>
     <!-- // end of card     -->
-
+    
     <div class="col-lg-3 col-md-6 mb-3 mb-4">
         <div class="card card1 shadow-sm">
             <div class="card-header bg-danger pt-1 pb-1">
                 <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
             </div>
-
+    
             <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 box-shadow-balanced d-flex flex-row">
                 <div class="mt-1 ml-2 btn-pill alert-danger text-danger rounded "><i class="far fa-image"></i></div>
                 <div class="pb-4 px-3">
@@ -89,7 +88,7 @@ nav : true
             </div>
         </div>
     </div>
-
+    
     <div class="col-lg-8">
         <div class="card overflow-hidden  mb-4 shadow-sm">
             <div class="card-header bg-white border-0">
@@ -107,17 +106,17 @@ nav : true
                 </div>
             </div>
             <div class="card-body p-0">
-                <canvas id="myChart" class="w-100" height="300"></canvas>
+                <div id="visitors-line-chart" class="widget-chart-full-width" style="height: 260px;"></div>
             </div>
         </div>
-
+    
         <div class="card shadow-sm mb-sm-4">
             <div class="card-header card-header-sm  bg-white b-0">
                 Radar
                 <div class="btn-group-xs float-right text-white">
-					<button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
-					<button type="button" class=" btn btn-xs btn-primary"><span>&#10006;</span> </button>
-				</div>
+                    <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                    <button type="button" class=" btn btn-xs btn-primary"><span>&#10006;</span> </button>
+                </div>
             </div>
             <!--c-head-->
             <div class="card-body table-responsive mt-n4 collapse show">
@@ -164,13 +163,13 @@ nav : true
                             </td>
                             <td><span class="badge alert-warning text-warning px-2">pending</span></td>
                         </tr>
-
+    
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-    <!-- chat requests -->
+    <!-- country stats -->
     <div class="col-lg-4">
         <div class="card h-1 mb-4 shadow-sm">
             <div class="card-header card-header-sm">Countries</div>
@@ -189,81 +188,28 @@ nav : true
                 </div>
             </div>
         </div>
-        <div class="card mb-4 shadow-sm">
+        <!-- start chat area -->
+        <div class="card shadow-sm">
             <div class="card-header bg-white border-0">chat Requests</div>
             <div class="card-body chat p-2">
-                <a class="d-flex py-3">
-                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
-                    <div class="flex-grow-1 ml-2">
-                        <b class="pl-2 p-0">John</b>
-                        <p class="m-0">The meeting . . .</p>
-                    </div>
-                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
-                </a>
-                <!-- end of user -->
-                <a class="d-flex py-3">
-                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
-                    <div class="flex-grow-1 ml-2">
-                        <b class="pl-2 p-0">John</b>
-                        <p class="m-0">The meeting . . .</p>
-                    </div>
-                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
-                </a>
-                <!-- end of user -->
-                <a class="d-flex py-3">
-                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
-                    <div class="flex-grow-1 ml-2">
-                        <b class="pl-2 p-0">John</b>
-                        <p class="m-0">The meeting . . .</p>
-                    </div>
-                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
-                </a>
-                <!-- end of user -->
-                <a class="d-flex py-3">
-                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
-                    <div class="flex-grow-1 ml-2">
-                        <b class="pl-2 p-0">John</b>
-                        <p class="m-0">The meeting . . .</p>
-                    </div>
-                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
-                </a>
-                <!-- end of user -->
-                <a class="d-flex py-3">
-                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
-                    <div class="flex-grow-1 ml-2">
-                        <b class="pl-2 p-0">John</b>
-                        <p class="m-0">The meeting . . .</p>
-                    </div>
-                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
-                </a>
-                <!-- end of user -->
-                <a class="d-flex py-3">
-                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
-                    <div class="flex-grow-1 ml-2">
-                        <b class="pl-2 p-0">John</b>
-                        <p class="m-0">The meeting . . .</p>
-                    </div>
-                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
-                </a>
-                <!-- end of user -->
-                <a class="d-flex py-3">
-                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
-                    <div class="flex-grow-1 ml-2">
-                        <b class="pl-2 p-0">John</b>
-                        <p class="m-0">The meeting . . .</p>
-                    </div>
-                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
-                </a>
-                <!-- end of user -->
-                <a class="d-flex py-3">
-                    <img src="assets/images/86.jpg" alt="image" class="avatar rounded-circle ml-1">
-                    <div class="flex-grow-1 ml-2">
-                        <b class="pl-2 p-0">John</b>
-                        <p class="m-0">The meeting . . .</p>
-                    </div>
-                    <span class="float-right m-0 btn bg-light btn-sm h-25 ">reply</span>
-                </a>
-                <!-- end of user -->
+                <ul class="media-list media-list-users list-group">
+                    <input class="form-control mb-2" type="search">
+                    {{#each chat}}
+                    <li class="list-group-item">
+                        <div class="media w-100">
+                            <img class="avatar rounded-circle mr-3" src="{{root}}assets/images/{{img}}.jpg">
+                            <div class="media-body align-self-center">
+                                <button class="btn btn-outline-primary btn-sm float-right">
+                                    <span class="icon icon-add-user"></span> chat
+                                </button>
+                                <strong>{{name}}</strong>
+                                <small>{{status}}</small>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
             </div>
         </div>
     </div>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/nvd3/build/nv.d3.js"></script>
