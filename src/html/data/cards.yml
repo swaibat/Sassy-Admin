@@ -1,15 +1,19 @@
 - name: Theo
-  status: online
+  color: primary
   img: theo
   icon: fas fa-envelope
 
 - name: Bob
-  status: online
+  status: warning
   img: bob
   icon: fas fa-envelope
 
 - name: charity
-  status: online
+  status: info
   img: charity
   icon: fas fa-envelope
 
+- name: nheo
+  status: danger
+  img: theo
+  icon: fas fa-envelope

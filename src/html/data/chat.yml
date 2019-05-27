@@ -13,3 +13,17 @@
   img: charity
   icon: fas fa-envelope
 
+- name: nheo
+  status: online
+  img: theo
+  icon: fas fa-envelope
+
+- name: kob
+  status: online
+  img: bob
+  icon: fas fa-envelope
+
+- name: xharity
+  status: online
+  img: charity
+  icon: fas fa-envelope
