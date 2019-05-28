@@ -12,7 +12,6 @@
     - name: buttons
     - name: cards
     - name: carousel
-    - name: dialog
     - name: pagination
     - name: progress
     - name: spinners
@@ -31,7 +30,6 @@
   nav:
     - name: basic_forms
     - name: iconic_form
-    - name: text_editors
 
 - title: charts
   icon: fas fa-chart-pie
@@ -59,7 +57,6 @@
   link: '#'
   nav:
     - name: contact
-    - name: faq
     - name: login
     - name: register
 

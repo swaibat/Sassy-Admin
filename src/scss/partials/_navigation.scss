@@ -1,11 +1,29 @@
-// navigation
+.navbar-collapse {
+    margin: .4rem -1rem;
+}
+
+@media (min-width: 992px) {
+    .sidenav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 11rem;
+      height: calc(100vh - 3.5rem);
+      margin-top: 3.8rem;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+.scrollable {
+    height: 85vh !important;
+    overflow: hidden !important;
+}
+ // navigation
 .sidenav {
-    position: absolute;
     top: 0;
     left: 0;
     width: 11rem;
     height: calc(100vh - 3.5rem);
-    margin-top: 3.9rem;
     box-shadow: $box-shadow-sm-right;
     border-top: solid 1px #f7f9fb;
     -ms-flex-direction: column;
@@ -14,6 +32,7 @@
         box-shadow: none;
         height: 70vh;
         width: 100%;
+        border-top: 2px solid #f2f8f9;
     }
     .nav-item {
         &:hover {
