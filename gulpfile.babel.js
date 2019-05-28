@@ -101,11 +101,15 @@ export function others() {
     popperJs = gulp.src('./node_modules/popper.js/dist/popper.min.js')
     .pipe(gulp.dest('./dist/assets/libs/popperjs')),
 
+  // ScrollJs
+  ScrollJs = gulp.src(['./node_modules/malihu-custom-scrollbar-plugin/*.min.js',"./node_modules/malihu-custom-scrollbar-plugin/*.css"])
+  .pipe(gulp.dest('./dist/assets/libs/malihu-custom')),
+
   // jQuery
     jquery = gulp.src('./node_modules/jquery/dist/*')
     .pipe(gulp.dest('./dist/assets/libs/jquery'));
 
-  return merge(bootstrapJS, chartJS, dataTables, webfonts, jquery,images,popperJs);
+  return merge(bootstrapJS, chartJS, dataTables, webfonts, jquery,images,popperJs,ScrollJs);
 }
 
 // reset page 

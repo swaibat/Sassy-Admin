@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- <link rel="stylesheet" href="assets/libs/malihu-custom/jquery.mCustomScrollbar.css"> -->
+    <!-- <script src=""></script> -->
 </head>
 
 <body>
@@ -22,21 +24,20 @@
             </div>
             <!-- [ side-navigation ] -->
             <div class="collapse navbar-collapse  order-sm-last order-lg-0 " id="navbarCollapse">
-                <ul class="navbar-nav mr-auto sidenav bg-white" id="navAccordion">
+                <ul class="navbar-nav mr-auto sidenav bg-white scrollable" id="navAccordion">
                     <li class="nav-item p-1   " id="hasSubItems" data-toggle="collapse" data-target="#dashboard" aria-controls="dashboard" aria-expanded="false">
-                        <a href="index.html" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="dashboard"><i class="fas fa-house-damage"></i><span class="pl-3 title">dashboard</span></a>
+                        <a href="index.html" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="dashboard"><i class="fas fa-house-damage"></i><span class="pl-3 title">dashboard</span></a>
                         <ul class="nav-second-level bg-white rounded-bottom collapse" id="dashboard" data-parent="#navAccordion">
                         </ul>
                     </li>
-                    <li class="nav-item p-1        active               " id="hasSubItems" data-toggle="collapse" data-target="#Components" aria-controls="Components" aria-expanded="false">
-                        <a href="#" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="Components"><i class="fas fa-layer-group"></i><span class="pl-3 title">Components</span></a>
-                        <ul class="nav-second-level bg-white rounded-bottom collapse     show               " id="Components" data-parent="#navAccordion">
+                    <li class="nav-item p-1        active             " id="hasSubItems" data-toggle="collapse" data-target="#Components" aria-controls="Components" aria-expanded="false">
+                        <a href="#" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="Components"><i class="fas fa-layer-group"></i><span class="pl-3 title">Components</span></a>
+                        <ul class="nav-second-level bg-white rounded-bottom collapse     show             " id="Components" data-parent="#navAccordion">
                             <li><a class="nav-link " href="alerts.html"><span class="nav-link-text "><span class="nav-check"></span>alerts</span></a></li>
                             <li><a class="nav-link " href="badges.html"><span class="nav-link-text "><span class="nav-check"></span>badges</span></a></li>
                             <li><a class="nav-link active" href="buttons.html"><span class="nav-link-text "><span class="nav-check"></span>buttons</span></a></li>
                             <li><a class="nav-link " href="cards.html"><span class="nav-link-text "><span class="nav-check"></span>cards</span></a></li>
                             <li><a class="nav-link " href="carousel.html"><span class="nav-link-text "><span class="nav-check"></span>carousel</span></a></li>
-                            <li><a class="nav-link " href="dialog.html"><span class="nav-link-text "><span class="nav-check"></span>dialog</span></a></li>
                             <li><a class="nav-link " href="pagination.html"><span class="nav-link-text "><span class="nav-check"></span>pagination</span></a></li>
                             <li><a class="nav-link " href="progress.html"><span class="nav-link-text "><span class="nav-check"></span>progress</span></a></li>
                             <li><a class="nav-link " href="spinners.html"><span class="nav-link-text "><span class="nav-check"></span>spinners</span></a></li>
@@ -44,14 +45,14 @@
                         </ul>
                     </li>
                     <li class="nav-item p-1       " id="hasSubItems" data-toggle="collapse" data-target="#utilities" aria-controls="utilities" aria-expanded="false">
-                        <a href="#" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="utilities"><i class="fas fa-wrench"></i><span class="pl-3 title">utilities</span></a>
+                        <a href="#" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="utilities"><i class="fas fa-wrench"></i><span class="pl-3 title">utilities</span></a>
                         <ul class="nav-second-level bg-white rounded-bottom collapse    " id="utilities" data-parent="#navAccordion">
                             <li><a class="nav-link " href="grid.html"><span class="nav-link-text "><span class="nav-check"></span>grid</span></a></li>
                             <li><a class="nav-link " href="flex-box.html"><span class="nav-link-text "><span class="nav-check"></span>flex-box</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-item p-1         " id="hasSubItems" data-toggle="collapse" data-target="#forms" aria-controls="forms" aria-expanded="false">
-                        <a href="#" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="forms"><i class="fas fa-file-alt"></i><span class="pl-3 title">forms</span></a>
+                        <a href="#" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="forms"><i class="fas fa-file-alt"></i><span class="pl-3 title">forms</span></a>
                         <ul class="nav-second-level bg-white rounded-bottom collapse      " id="forms" data-parent="#navAccordion">
                             <li><a class="nav-link " href="basic_forms.html"><span class="nav-link-text "><span class="nav-check"></span>basic_forms</span></a></li>
                             <li><a class="nav-link " href="iconic_form.html"><span class="nav-link-text "><span class="nav-check"></span>iconic_form</span></a></li>
@@ -59,43 +60,42 @@
                         </ul>
                     </li>
                     <li class="nav-item p-1       " id="hasSubItems" data-toggle="collapse" data-target="#charts" aria-controls="charts" aria-expanded="false">
-                        <a href="#" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="charts"><i class="fas fa-chart-pie"></i><span class="pl-3 title">charts</span></a>
+                        <a href="#" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="charts"><i class="fas fa-chart-pie"></i><span class="pl-3 title">charts</span></a>
                         <ul class="nav-second-level bg-white rounded-bottom collapse    " id="charts" data-parent="#navAccordion">
                             <li><a class="nav-link " href="chartjs.html"><span class="nav-link-text "><span class="nav-check"></span>chartjs</span></a></li>
                             <li><a class="nav-link " href="sparkline.html"><span class="nav-link-text "><span class="nav-check"></span>sparkline</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-item p-1       " id="hasSubItems" data-toggle="collapse" data-target="#tables" aria-controls="tables" aria-expanded="false">
-                        <a href="#" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="tables"><i class="fas fa-table"></i><span class="pl-3 title">tables</span></a>
+                        <a href="#" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="tables"><i class="fas fa-table"></i><span class="pl-3 title">tables</span></a>
                         <ul class="nav-second-level bg-white rounded-bottom collapse    " id="tables" data-parent="#navAccordion">
                             <li><a class="nav-link " href="bootstrap_tables.html"><span class="nav-link-text "><span class="nav-check"></span>bootstrap_tables</span></a></li>
                             <li><a class="nav-link " href="data_tables.html"><span class="nav-link-text "><span class="nav-check"></span>data_tables</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-item p-1       " id="hasSubItems" data-toggle="collapse" data-target="#notifications" aria-controls="notifications" aria-expanded="false">
-                        <a href="#" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="notifications"><i class="fas fa-comment-alt"></i><span class="pl-3 title">notifications</span></a>
+                        <a href="#" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="notifications"><i class="fas fa-comment-alt"></i><span class="pl-3 title">notifications</span></a>
                         <ul class="nav-second-level bg-white rounded-bottom collapse    " id="notifications" data-parent="#navAccordion">
                             <li><a class="nav-link " href="sweet_alert.html"><span class="nav-link-text "><span class="nav-check"></span>sweet_alert</span></a></li>
                             <li><a class="nav-link " href="toastr.html"><span class="nav-link-text "><span class="nav-check"></span>toastr</span></a></li>
                         </ul>
                     </li>
-                    <li class="nav-item p-1           " id="hasSubItems" data-toggle="collapse" data-target="#pages" aria-controls="pages" aria-expanded="false">
-                        <a href="#" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="pages"><i class="fas fa-file-powerpoint"></i><span class="pl-3 title">pages</span></a>
-                        <ul class="nav-second-level bg-white rounded-bottom collapse        " id="pages" data-parent="#navAccordion">
+                    <li class="nav-item p-1         " id="hasSubItems" data-toggle="collapse" data-target="#pages" aria-controls="pages" aria-expanded="false">
+                        <a href="#" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="pages"><i class="fas fa-file-powerpoint"></i><span class="pl-3 title">pages</span></a>
+                        <ul class="nav-second-level bg-white rounded-bottom collapse      " id="pages" data-parent="#navAccordion">
                             <li><a class="nav-link " href="contact.html"><span class="nav-link-text "><span class="nav-check"></span>contact</span></a></li>
-                            <li><a class="nav-link " href="faq.html"><span class="nav-link-text "><span class="nav-check"></span>faq</span></a></li>
                             <li><a class="nav-link " href="login.html"><span class="nav-link-text "><span class="nav-check"></span>login</span></a></li>
                             <li><a class="nav-link " href="register.html"><span class="nav-link-text "><span class="nav-check"></span>register</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-item p-1   " id="hasSubItems" data-toggle="collapse" data-target="#Docs" aria-controls="Docs" aria-expanded="false">
-                        <a href="docs.html" class="nav-link nav-link-collapse d-flex " data-toggle="tooltip" title="Docs"><i class="far fa-file"></i><span class="pl-3 title">Docs</span></a>
+                        <a href="docs.html" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="Docs"><i class="far fa-file"></i><span class="pl-3 title">Docs</span></a>
                         <ul class="nav-second-level bg-white rounded-bottom collapse" id="Docs" data-parent="#navAccordion">
                         </ul>
                     </li>
                     <div class="d-flex fixed-bottom m-2 w-100">
-                        <button class="btn btn-sm bg-light mr-2">hello</button>
-                        <button class="btn btn-sm bg-light float-right ml-5">hello</button>
+                        <button class="btn btn-sm bg-white mr-2">hello</button>
+                        <button class="btn btn-sm bg-white float-right ml-5">hello</button>
                     </div>
                 </ul>
             </div>
@@ -109,11 +109,11 @@
                             <span class="badge  badge-primary badge-circle  pin-badge mt-3 ml-n2 "><i class="fas fa-comment"></i></span>
                         </a>
                         <a href="#" class="carousel-item d-flex">
-                            <img class="avatar rounded-circle" src="assets/images/theo.jpg" alt="" width="40">
+                            <img class="avatar rounded-circle" src="assets/images/theo.jpg" alt="theo" width="40">
                             <span class="badge badge-danger text-white badge-circle pin-badge mt-3 ml-n2"><i class="fas fa-envelope"></i></span>
                         </a>
                         <a href="#" class="carousel-item d-flex">
-                            <img class="avatar rounded-circle" src="assets/images/charity.jpg" alt="" width="40">
+                            <img class="avatar rounded-circle" src="assets/images/charity.jpg" alt="charity" width="40">
                             <span class="badge badge-danger text-white badge-circle pin-badge mt-3 ml-n2"><i class="far fa-comment"></i></span>
                         </a>
                     </div>
@@ -125,21 +125,21 @@
                         <span class="badge badge-info badge-pill float-right">View all</span>
                     </div>
                     <a class="dropdown-item d-flex">
-                        <div class="ml-n3"><img src="assets/images/theo.jpg" alt="image" class="avatar rounded-circle"></div>
+                        <div class="ml-n3"><img src="assets/images/theo.jpg" alt="Theo" class="avatar rounded-circle"></div>
                         <div class="flex-grow ml-2">
                             <b class="pl-2 p-0">Theo<small class="float-right m-0">1 Minutes ago</small></b>
                             <p class="m-0">The meeting is cancelled</p>
                         </div>
                     </a>
                     <a class="dropdown-item d-flex">
-                        <div class="ml-n3"><img src="assets/images/bob.jpg" alt="image" class="avatar rounded-circle"></div>
+                        <div class="ml-n3"><img src="assets/images/bob.jpg" alt="Bob" class="avatar rounded-circle"></div>
                         <div class="flex-grow ml-2">
                             <b class="pl-2 p-0">Bob<small class="float-right m-0">1 Minutes ago</small></b>
                             <p class="m-0">The meeting is cancelled</p>
                         </div>
                     </a>
                     <a class="dropdown-item d-flex">
-                        <div class="ml-n3"><img src="assets/images/charity.jpg" alt="image" class="avatar rounded-circle"></div>
+                        <div class="ml-n3"><img src="assets/images/charity.jpg" alt="charity" class="avatar rounded-circle"></div>
                         <div class="flex-grow ml-2">
                             <b class="pl-2 p-0">charity<small class="float-right m-0">1 Minutes ago</small></b>
                             <p class="m-0">The meeting is cancelled</p>
@@ -173,15 +173,14 @@
             <div class="col-md-8">
                 <div class="card my-3 bg-white">
                     <div class="card-header card-header-sm shadow-sm  bg-white b-0">
-                        Rada
+                        Default Buttons
                         <div class="btn-group-xs float-right text-white">
-                            <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w1" aria-expanded="false" aria-controls="w1"><span>&#8212;</span> </button>
                             <button type="button" class="btn btn-xs btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
                     <!--c-head-->
-                    <div id="d-prog1" class="card-body">
-                        <p id="desc1" class="card-text collapse">Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+                    <div class="card-body collapse show" id="w1">
                         <button type="button" class="btn btn-primary">Primary</button>
                         <button type="button" class="btn btn-secondary">Secondary</button>
                         <button type="button" class="btn btn-success">Success</button>
@@ -195,15 +194,14 @@
                 </div>
                 <div class="card my-3 bg-white">
                     <div class="card-header card-header-sm shadow-sm  bg-white b-0">
-                        Rada
+                        Button Outline
                         <div class="btn-group-xs float-right text-white">
-                            <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w2" aria-expanded="false" aria-controls="w2"><span>&#8212;</span> </button>
                             <button type="button" class="btn btn-xs btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
                     <!--c-head-->
-                    <div id="d-prog11" class="card-body">
-                        <p id="desc11" class="card-text collapse">In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+                    <div class="card-body collapse show" id="w2">
                         <button type="button" class="btn btn-outline-primary">Primary</button>
                         <button type="button" class="btn btn-outline-secondary">Secondary</button>
                         <button type="button" class="btn btn-outline-success">Success</button>
@@ -217,15 +215,14 @@
                 </div>
                 <div class="card my-3 bg-white">
                     <div class="card-header card-header-sm shadow-sm  bg-white b-0">
-                        Rada
+                        Dropdown buttons
                         <div class="btn-group-xs float-right text-white">
-                            <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w8" aria-expanded="false" aria-controls="w8"><span>&#8212;</span> </button>
                             <button type="button" class="btn btn-xs btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
                     <!--c-head-->
-                    <div id="d-prog2" class="card-body buttons">
-                        <p id="desc2" class="card-text collapse">Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+                    <div class="card-body collapse show" id="w8">
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                             <button type="button" class="btn btn-primary">Primary</button>
                             <div class="btn-group" role="group">
@@ -274,15 +271,14 @@
                 </div>
                 <div class="card my-3 bg-white">
                     <div class="card-header card-header-sm shadow-sm  bg-white b-0">
-                        Rada
+                        Dropdown Outline buttons
                         <div class="btn-group-xs float-right text-white">
-                            <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w3" aria-expanded="false" aria-controls="w3"><span>&#8212;</span> </button>
                             <button type="button" class="btn btn-xs btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
                     <!--c-head-->
-                    <div id="d-prog12" class="card-body buttons">
-                        <p id="desc12" class="card-text collapse">Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+                    <div class="card-body collapse show" id="w3">
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                             <button type="button" class="btn btn-outline-primary">Primary</button>
                             <div class="btn-group" role="group">
@@ -331,15 +327,14 @@
                 </div>
                 <div class="card my-3 bg-white">
                     <div class="card-header card-header-sm shadow-sm  bg-white b-0">
-                        Rada
+                        Button sizes
                         <div class="btn-group-xs float-right text-white">
-                            <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w4" aria-expanded="false" aria-controls="w4"><span>&#8212;</span> </button>
                             <button type="button" class="btn btn-xs btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
                     <!--c-head-->
-                    <div id="d-prog13" class="card-body">
-                        <p id="desc13" class="card-text collapse">Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
+                    <div class="card-body collapse show" id="w4">
                         <button type="button" class="btn btn-primary btn-lg">Large button</button>
                         <button type="button" class="btn btn-primary">Default button</button>
                         <button type="button" class="btn btn-primary btn-sm">Small button</button>
@@ -350,30 +345,28 @@
             <div class="col-md-4">
                 <div class="card my-3 bg-white">
                     <div class="card-header card-header-sm shadow-sm  bg-white b-0">
-                        Rada
+                        Block level button
                         <div class="btn-group-xs float-right text-white">
-                            <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w5" aria-expanded="false" aria-controls="w5"><span>&#8212;</span> </button>
                             <button type="button" class="btn btn-xs btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
                     <!--c-head-->
-                    <div id="d-prog14" class="card-body">
-                        <p id="desc14" class="card-text collapse">Create block level buttons—those that span the full width of a parent—by adding <code>.btn-block.</code></p>
+                    <div class="card-body collapse show" id="w5">
                         <button type="button" class="btn btn-primary btn-block">Block level button</button>
                     </div>
 
                 </div>
                 <div class="card my-3 bg-white">
                     <div class="card-header card-header-sm shadow-sm  bg-white b-0">
-                        Rada
+                        Group buttons
                         <div class="btn-group-xs float-right text-white">
-                            <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w6" aria-expanded="false" aria-controls="w6"><span>&#8212;</span> </button>
                             <button type="button" class="btn btn-xs btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
                     <!--c-head-->
-                    <div id="d-prog15" class="card-body">
-                        <p id="desc15" class="card-text collapse">use Use <code>.btn-group-toggle</code> class as default add the <code>.active</code> class to the input’s </p>
+                    <div class="card-body collapse show" id="w6">
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="checkbox" checked="" autocomplete="off"> Active
@@ -390,15 +383,14 @@
                 </div>
                 <div class="card my-3 bg-white">
                     <div class="card-header card-header-sm shadow-sm  bg-white b-0">
-                        Rada
+                        Vertical Group buttons
                         <div class="btn-group-xs float-right text-white">
-                            <button type="button" class="btn btn-xs btn-primary"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w7" aria-expanded="false" aria-controls="w7"><span>&#8212;</span> </button>
                             <button type="button" class="btn btn-xs btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
                     <!--c-head-->
-                    <div id="d-prog16" class="card-body">
-                        <p id="desc16" class="card-text collapse">Use <code>.btn-group-vertical</code> class to allign buttons vertically</p>
+                    <div class="card-body collapse show" id="w7">
                         <div class="btn-group-vertical" data-toggle="buttons">
                             <button type="button" class="btn btn-primary">Button</button>
                             <button type="button" class="btn btn-primary">Button</button>
@@ -413,7 +405,7 @@
         </div>
     </main>
     <div class="customizer">
-        <button class="btn bg-white btn-sm rounded  shadow-sm text-primary" type="button" data-toggle="collapse" data-target="#customizer" aria-expanded="false" aria-controls="customizer"><i class="fas fa-pencil-alt px-2"></i><span>Customize</span></button>
+        <button class="btn btn-primary btn-sm rounded  shadow-sm text-white" type="button" data-toggle="collapse" data-target="#customizer" aria-expanded="false" aria-controls="customizer"><i class="fas fa-pencil-alt px-2"></i><span>Customize</span></button>
         <div class="collapse  customize" id="customizer">
             <div class="card card-body">
                 <label class="my-1 mr-2" for="Layout">Layout</label>
@@ -436,6 +428,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/libs/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/libs/chartjs/Chart.min.js"></script>
+    <script src="assets/libs/malihu-custom/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/app.min.js"></script>
 </body>
 
