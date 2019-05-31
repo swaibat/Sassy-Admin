@@ -2,28 +2,27 @@
 @import "variables";
 
 // Import Bootstrap
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "./bootstrap/bootstrap";
 
 // Import fontawesome
-@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
-@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome";
+@import "@fortawesome/solid";
+@import "@fortawesome/regular";
 
 // global
-@import "global";
+@import "custom/global";
 
 // Utilities
-@import "components";
-@import "utilities";
-@import "mixins";
-@import "partials";
+@import "custom/components";
+@import "custom/utilities";
+@import "custom/mixins";
+@import "custom/partials";
 
 // components
-@import "humburger";
+@import "custom/humburger";
 
 // layouts
-@import "layouts";
+@import "custom/layouts";
 
 // pages
-@import "pages/docs"
+@import "custom/pages/docs"

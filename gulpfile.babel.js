@@ -52,12 +52,7 @@ export function html() {
 
 // CSS task
 export function styles() {
-  return gulp.src([
-    './src/scss/*.scss',
-    './src/fonts/*.css',
-    './node_modules/datatables.net-dt/css/*.min.css',
-    './node_modules/malihu-custom-scrollbar-plugin/*.css',
-  ])
+  return gulp.src('./src/scss/*.scss')
     .pipe(sass())
     .pipe(cleanCSS())
     .pipe(concat('style.min.css'))
@@ -78,38 +73,9 @@ export function scripts() {
 
 
 export function others() {
-  // Bootstrap JS
-  const bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
-    .pipe(gulp.dest('./dist/assets/bootstrap/js')),
-  // ChartJS
-    chartJS = gulp.src('./node_modules/chart.js/dist/*.min.js')
-    .pipe(gulp.dest('./dist/assets/libs/chartjs/')),
-  
-    // fonts
-    webfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
-    .pipe(gulp.dest('./dist/assets/fonts/')),
-
-  // dataTables
-    dataTables = gulp.src('./node_modules/datatables.net/js/*.min.js')
-    .pipe(gulp.dest('./dist/assets/libs/datatables')),
-  
-    //images 
-    images = gulp.src('./src/images/*.+(png|jpg|jpeg|gif|svg)')
-    .pipe(gulp.dest('./dist/assets/images/')),
-
-  // Popperjs
-    popperJs = gulp.src('./node_modules/popper.js/dist/popper.min.js')
-    .pipe(gulp.dest('./dist/assets/libs/popperjs')),
-
-  // ScrollJs
-  ScrollJs = gulp.src(['./node_modules/malihu-custom-scrollbar-plugin/*.min.js',"./node_modules/malihu-custom-scrollbar-plugin/*.css"])
-  .pipe(gulp.dest('./dist/assets/libs/malihu-custom')),
-
-  // jQuery
-    jquery = gulp.src('./node_modules/jquery/dist/*')
-    .pipe(gulp.dest('./dist/assets/libs/jquery'));
-
-  return merge(bootstrapJS, chartJS, dataTables, webfonts, jquery,images,popperJs,ScrollJs);
+    return gulp
+    .src(['./src/**/**/*','!./src/scss/**','!./src/html/**','!./src/js/**'])
+    .pipe(gulp.dest('./dist/assets/'));
 }
 
 // reset page 
