@@ -9,7 +9,7 @@ import panini from 'panini'
 import rename from "gulp-rename"
 import sass from 'gulp-sass'
 import uglify from 'gulp-uglify'
-import concat from 'gulp-concat';
+
 // BrowserSync
 export function browserSync(done) {
   browsersync.init({
@@ -63,7 +63,6 @@ export function styles() {
 export function scripts() {
   return gulp
     .src('./src/js/*.js')
-    .pipe(concat('app.js'))
     .pipe(rename({
       suffix: '.min'
     }))
