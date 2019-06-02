@@ -388,8 +388,14 @@
     </script>
     <script>
         $(".media").click(() => {
-            $('.chat').html('Hello World');
+            $('.threads').addClass('d-none');
+            $('.conversation').removeClass('d-none');
         });
+        $("#back").click(() => {
+            $('.threads').removeClass('d-none');
+            $('.conversation').addClass('d-none');
+        });
+
 
         $(document).ready(function() {
             $('#example').DataTable();
