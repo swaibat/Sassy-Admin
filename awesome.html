@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <!-- <link rel="stylesheet" href="assets/libs/malihu-custom/jquery.mCustomScrollbar.css"> -->
+    <link rel="stylesheet" href="assets/libs/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/libs/iziToast/iziToast.min.css">
+    <link rel="stylesheet" href="assets/libs/malihu-scroll/jquery.mCustomScrollbar.css">
     <!-- <script src=""></script> -->
 </head>
 
@@ -92,10 +94,6 @@
                         <ul class="nav-second-level bg-white rounded-bottom collapse" id="Docs" data-parent="#navAccordion">
                         </ul>
                     </li>
-                    <div class="d-flex fixed-bottom m-2 w-100">
-                        <button class="btn btn-sm bg-white mr-2">hello</button>
-                        <button class="btn btn-sm bg-white float-right ml-5">hello</button>
-                    </div>
                 </ul>
             </div>
 
@@ -144,6 +142,13 @@
                             <p class="m-0">The meeting is cancelled</p>
                         </div>
                     </a>
+                    <a class="dropdown-item d-flex">
+                        <div class="ml-n3"><img src="assets/images/charity.jpg" alt="swaibu" class="avatar rounded-circle"></div>
+                        <div class="flex-grow ml-2">
+                            <b class="pl-2 p-0">swaibu<small class="float-right m-0">1 Minutes ago</small></b>
+                            <p class="m-0">The meeting is cancelled</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <!-- user account -->
@@ -152,9 +157,9 @@
                     <img src="assets/images/user.svg" alt="" width="40">
                 </button>
                 <div class="dropdown-menu account" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item my-2" href="#"><i class="icon-user mx-2"></i>Profile</a>
+                    <a class="dropdown-item my-2" href="#"><i class="icon-bubbles mx-2"></i>Messages</a>
+                    <a class="dropdown-item my-2" href="#"><i class="icon-lock-open mx-2"></i>Lock screen</a>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -12195,10 +12200,10 @@
         <div class="collapse  customize" id="customizer">
             <div class="card card-body">
                 <label class="my-1 mr-2" for="Layout">Layout</label>
-                <select class="form-control form-control-sm">
-                    <option selected>Default</option>
-                    <option value="1">Mini</option>
-                    <option value="2">Top-nav</option>
+                <select class="Layout" class="form-control form-control-sm">
+                    <option value="default">default</option>
+                    <option value="mini">mini</option>
+                    <option value="top-nav">top-nav</option>
                 </select>
             </div>
         </div>
@@ -12211,10 +12216,61 @@
         </div>
     </footer>
     <script src="assets/libs/jquery/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="assets/libs/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/libs/chartjs/Chart.min.js"></script>
     <script src="assets/libs/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.min.js"></script>
+    <script src="assets/libs/sweetalert2/sweetalert.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.primary').sparkline([10, 8, 5, 7, 4, 4, 4, 3, 4, 5, 6, 5, 8], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#007bff'
+            });
+            $('.warning').sparkline([10, 8, 5, 7, 4, 4, 1, 4, 5, 6, 6, 7, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#ffc107'
+            });
+            $('.info').sparkline([10, 8, 5, 7, 4, 4, 4, 6, 4, 4, 6, 5, 4, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#17a2b8'
+            });
+            $('.danger').sparkline([10, 8, 5, 7, 10, 8, 5, 7, 4, 4, 1], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#dc3545'
+            });
+        });
+    </script>
+    <script>
+        $(".media").click(() => {
+            $('.chat').html('Hello World');
+        });
+
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("select.Layout").change(function() {
+                var selectedLayout = $(this).children("option:selected").val();
+                $("body").removeClass('mini top-nav').addClass(selectedLayout)
+
+            });
+        });
+    </script>
 </body>
 
 </html>
