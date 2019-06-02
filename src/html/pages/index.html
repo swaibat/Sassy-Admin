@@ -27,8 +27,8 @@
                 <span class="dot p-2 bg-warning rounded-circle mx-2"></span><small>Users</small>
                 <span class="dot p-2 bg-primary rounded-circle mx-2 ml-3"></span><small>Sales</small>
             </div>
-            <div class="btn-group  btn-group-toggle float-right" data-toggle="buttons">
-                <button class="btn btn-primary btn-xs active">weekly</button>
+            <div class="btn-group btn-group-xs btn-group-win mt-n3 float-right" data-toggle="buttons">
+                <button class="btn btn-primary active">weekly</button>
                 <button id="randomizeData" class="btn btn-primary btn-xs">Monthly</button>
             </div>
         </div>
@@ -38,11 +38,11 @@
     </div>
 
     <div class="card  mb-sm-4">
-        <div class="card-header card-header-sm  bg-white b-0">
+        <div class="card-header card-header-sm  bg-white b-0 overflow-hidden">
             Recent users
-            <div class="btn-group-xs float-right text-white">
-                <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w1" aria-expanded="false" aria-controls="w1"><span>&#8212;</span> </button>
-                <button type="button" class=" btn btn-xs btn-primary"><span>&#10006;</span> </button>
+              <div class="btn-group btn-group-xs btn-group-win float-right" role="group">
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#w1" aria-expanded="false" aria-controls="w1"><span>&#8212;</span> </button>
+                <button type="button" class=" btn btn-primary"><span>&#10006;</span></button>
             </div>
         </div>
         <!--c-head-->
@@ -97,7 +97,7 @@
             chat Requests <span class="badge badge-primary float-right mt-n3">4 messages</span>
         </div>
         <div class="card-body  p-2">
-            <div class="threads d-none ">
+            <div class="threads  ">
                 <div class="input-group mb-2">
                     <span class="input-group-prepend">
                                 <span class="input-group-text">
@@ -126,6 +126,7 @@
 
             <!-- chat conversation -->
             <div class="conversation">
+                <div class="btn btn-xs  btn-primary mb-2">back</div>
             <div class="chat ">
                 <div class="d-flex justify-content-start mb-2">
                     <div class="bubble bubble-left bg-light">
@@ -166,9 +167,9 @@
             <div class="card-footer">
                 <div class="input-group">
                     <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <div class="input-group-append">
-                        <span class="input-group-text">$</span>
-                        <span class="input-group-text">0.00</span>
+                    <div class="input-group-append ">
+                        <span class="input-group-text "><i class="fas fa-paperclip"></i></span>
+                        <span class="input-group-text"><i class="fas fa-paper-plane"></i></span>
                     </div>
                 </div>
             </div>

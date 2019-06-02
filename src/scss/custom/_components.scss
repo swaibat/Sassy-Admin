@@ -17,15 +17,21 @@
         }
     }
 }
-
+.btn-group-win{
+    margin-right: -1.3rem;
+    margin-top: -.3rem;
+}
 .customizer.bottom{
     bottom: 4.1rem;
 }
 
-.btn-xs {
-    font-size: 12px;
+.btn-group-xs > .btn, .btn-xs {
+    padding: .15rem .5rem;
+    font-size: .675rem;
     line-height: 1.5;
-    padding: 1px 5px;
+    border-radius: .18rem;
+    border-top-left-radius: 0.18rem;
+    border-bottom-left-radius: 0.18rem;
 }
 
 .btn-pill {
@@ -69,9 +75,10 @@
     display: inline-block;
     width: 0;
     height: 0;
-    margin-left: 2px;
+    margin-left: -6px;
     vertical-align: middle;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
     border-right: 6px solid #f5f8fa;
+    margin-top: -.2rem;
 }
