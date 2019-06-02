@@ -298,59 +298,6 @@
     <script src="assets/libs/sparkline/jquery.sparkline.min.js"></script>
     <script src="assets/libs/datatables/dataTables.min.js"></script>
     <script src="assets/libs/sweetalert2/sweetalert.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $('.primary').sparkline([10, 8, 5, 7, 4, 4, 4, 3, 4, 5, 6, 5, 8], {
-                type: 'bar',
-                height: '35',
-                width: '100%',
-                barColor: '#007bff'
-            });
-            $('.warning').sparkline([10, 8, 5, 7, 4, 4, 1, 4, 5, 6, 6, 7, 4], {
-                type: 'bar',
-                height: '35',
-                width: '100%',
-                barColor: '#ffc107'
-            });
-            $('.info').sparkline([10, 8, 5, 7, 4, 4, 4, 6, 4, 4, 6, 5, 4, 4], {
-                type: 'bar',
-                height: '35',
-                width: '100%',
-                barColor: '#17a2b8'
-            });
-            $('.danger').sparkline([10, 8, 5, 7, 10, 8, 5, 7, 4, 4, 1], {
-                type: 'bar',
-                height: '35',
-                width: '100%',
-                barColor: '#dc3545'
-            });
-        });
-    </script>
-    <script>
-        $(".media").click(() => {
-            $('.threads').addClass('d-none');
-            $('.conversation').removeClass('d-none');
-        });
-        $("#back").click(() => {
-            $('.threads').removeClass('d-none');
-            $('.conversation').addClass('d-none');
-        });
-
-
-        $(document).ready(function() {
-            $('#example').DataTable();
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("select.Layout").change(function() {
-                var selectedLayout = $(this).children("option:selected").val();
-                $("body").removeClass('mini top-nav').addClass(selectedLayout)
-
-            });
-        });
-    </script>
 </body>
 
 </html>
