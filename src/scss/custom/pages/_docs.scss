@@ -1,3 +1,55 @@
+.direct{
+    
+    ul{
+        margin: 0px 0px 0px 20px; 
+        list-style: none;
+        line-height: 2em;
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        li{
+            font-size: 16px;
+            position: relative;
+            &:before{
+                position: absolute;
+                left: -15px;
+                top: 0px;
+                content: '';
+                display: block;
+                border-left: 1px solid #ddd;
+                height: 1em;
+                border-bottom: 1px solid #ddd;
+                width: 10px;
+            }
+    
+            &:after{
+                position: absolute;
+                left: -15px;
+                bottom: -7px;
+                content: '';
+                display: block;
+                border-left: 1px solid #ddd;
+                height: 100%;
+            }
+            
+          &.root{
+              margin: 0px 0px 0px -20px;
+              &:before{
+                display: none;
+              }
+    
+              &:after{
+                display: none;
+              }
+    
+    
+           }
+    
+    
+           &:last-child{
+              &:after{ display: none }
+            }
+        }
+    }
+}
 .docs-nav{
     margin-top: -6rem;
     width: 12rem;

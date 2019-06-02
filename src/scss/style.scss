@@ -8,6 +8,7 @@
 @import "@fortawesome/fontawesome";
 @import "@fortawesome/solid";
 @import "@fortawesome/regular";
+@import "@fortawesome/brands.scss";
 
 // global
 @import "custom/global";
@@ -25,4 +26,5 @@
 @import "custom/layouts";
 
 // pages
+@import "custom/pages/pages";
 @import "custom/pages/docs"

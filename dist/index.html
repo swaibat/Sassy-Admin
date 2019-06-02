@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>main</title>
+    <title></title>
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <!-- <link rel="stylesheet" href="assets/libs/malihu-custom/jquery.mCustomScrollbar.css"> -->
+    <link rel="stylesheet" href="assets/libs/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/libs/iziToast/iziToast.min.css">
+    <link rel="stylesheet" href="assets/libs/malihu-scroll/jquery.mCustomScrollbar.css">
     <!-- <script src=""></script> -->
 </head>
 
@@ -92,10 +94,6 @@
                         <ul class="nav-second-level bg-white rounded-bottom collapse" id="Docs" data-parent="#navAccordion">
                         </ul>
                     </li>
-                    <div class="d-flex fixed-bottom m-2 w-100">
-                        <button class="btn btn-sm bg-white mr-2">hello</button>
-                        <button class="btn btn-sm bg-white float-right ml-5">hello</button>
-                    </div>
                 </ul>
             </div>
 
@@ -144,6 +142,13 @@
                             <p class="m-0">The meeting is cancelled</p>
                         </div>
                     </a>
+                    <a class="dropdown-item d-flex">
+                        <div class="ml-n3"><img src="assets/images/charity.jpg" alt="swaibu" class="avatar rounded-circle"></div>
+                        <div class="flex-grow ml-2">
+                            <b class="pl-2 p-0">swaibu<small class="float-right m-0">1 Minutes ago</small></b>
+                            <p class="m-0">The meeting is cancelled</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <!-- user account -->
@@ -152,9 +157,9 @@
                     <img src="assets/images/user.svg" alt="" width="40">
                 </button>
                 <div class="dropdown-menu account" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item my-2" href="#"><i class="icon-user mx-2"></i>Profile</a>
+                    <a class="dropdown-item my-2" href="#"><i class="icon-bubbles mx-2"></i>Messages</a>
+                    <a class="dropdown-item my-2" href="#"><i class="icon-lock-open mx-2"></i>Lock screen</a>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -172,88 +177,73 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card card1 ">
                     <div class="card-header bg-primary pt-1 pb-1">
-                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                        <p class="text-white">Users<small class="float-right">Weekly stats</small></p>
                     </div>
-
                     <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
-                        <div class="mt-1 ml-2 btn-pill alert-primary text-primary rounded "><i class="far fa-image"></i></div>
+                        <div class="mt-1 ml-2 btn-pill alert-primary text-primary rounded "><i class="fas fa-users"></i></div>
                         <div class="pb-4 px-3">
-                            <b class="d-block  counter-value">$120</b>
-                            <small class="text-primary ">+48.34%</small>
+                            <b class="d-block  counter">500</b>
+                            <small class="text-primary ">+58.00%</small>
                         </div>
                         <div class="chart py-2  flex-fill">
-                            <div class="pl-1">
-                                <canvas id="myChartC" class="w-100" height="50"></canvas>
-                            </div>
+                            <span class="primary float-right pr-3"></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- // end of card     -->
-
-            <div class="col-lg-3 col-md-6 mb-3 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card card1 ">
                     <div class="card-header bg-warning pt-1 pb-1">
-                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                        <p class="text-white">page Views<small class="float-right">Weekly stats</small></p>
                     </div>
-
-                    <div class="card-body rounded p-1 bg-white mt-n3 mx-n1  d-flex flex-row">
-                        <div class="mt-1 ml-2 btn-pill alert-warning text-warning rounded "><i class="far fa-image"></i></div>
+                    <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
+                        <div class="mt-1 ml-2 btn-pill alert-warning text-warning rounded "><i class="fas fa-eye"></i></div>
                         <div class="pb-4 px-3">
-                            <b class="d-block  counter-value">$120</b>
+                            <b class="d-block  counter">13000</b>
                             <small class="text-warning ">+48.34%</small>
                         </div>
                         <div class="chart py-2  flex-fill">
-                            <div class="pl-1">
-                                <canvas id="myChartC" class="w-100" height="50"></canvas>
-                            </div>
+                            <span class="warning float-right pr-3"></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- // end of card     -->
-            <div class="col-lg-3 col-md-6 mb-3 mb-4">
-                <div class="card card1">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card card1 ">
                     <div class="card-header bg-info pt-1 pb-1">
-                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                        <p class="text-white">Sales<small class="float-right">Weekly stats</small></p>
                     </div>
-
                     <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
-                        <div class="mt-1 ml-2 btn-pill alert-info text-info rounded "><i class="far fa-image"></i></div>
+                        <div class="mt-1 ml-2 btn-pill alert-info text-info rounded "><i class="fas fa-coins"></i></div>
                         <div class="pb-4 px-3">
-                            <b class="d-block  counter-value">$120</b>
-                            <small class="text-info ">+48.34%</small>
+                            <b class="d-block  counter">24000</b>
+                            <small class="text-info ">+68.34%</small>
                         </div>
                         <div class="chart py-2  flex-fill">
-                            <div class="pl-1">
-                                <canvas id="myChartC" class="w-100" height="50"></canvas>
-                            </div>
+                            <span class="info float-right pr-3"></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- // end of card     -->
-
-            <div class="col-lg-3 col-md-6 mb-3 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card card1 ">
                     <div class="card-header bg-danger pt-1 pb-1">
-                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                        <p class="text-white">Products<small class="float-right">Weekly stats</small></p>
                     </div>
-
                     <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
-                        <div class="mt-1 ml-2 btn-pill alert-danger text-danger rounded "><i class="far fa-image"></i></div>
+                        <div class="mt-1 ml-2 btn-pill alert-danger text-danger rounded "><i class="fas fa-store"></i></div>
                         <div class="pb-4 px-3">
-                            <b class="d-block  counter-value">$120</b>
-                            <small class="text-danger ">+48.34%</small>
+                            <b class="d-block  counter">3000</b>
+                            <small class="text-danger ">+20.14%</small>
                         </div>
                         <div class="chart py-2  flex-fill">
-                            <div class="pl-1">
-                                <canvas id="myChartC" class="w-100" height="50"></canvas>
-                            </div>
+                            <span class="danger float-right pr-3"></span>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- // end of card     -->
+
 
             <div class="col-lg-8">
                 <div class="card overflow-hidden  mb-4 ">
@@ -274,7 +264,7 @@
 
                 <div class="card  mb-sm-4">
                     <div class="card-header card-header-sm  bg-white b-0">
-                        Radar
+                        Recent users
                         <div class="btn-group-xs float-right text-white">
                             <button type="button" class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#w1" aria-expanded="false" aria-controls="w1"><span>&#8212;</span> </button>
                             <button type="button" class=" btn btn-xs btn-primary"><span>&#10006;</span> </button>
@@ -292,40 +282,41 @@
                                     <th style="width: 45px">Operation</th>
                                 </tr>
                                 <tr>
-                                    <td><img class="rounded-circle" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAABM0lEQVRYR+2WMUtCYRSGHweREN20IBokFxPaIghazK3fkIttTk5uDm5NTW65JP2EtnIJhGgL1KVwiCCFBgkJJ0Pio5Ques4dlDjffLk893nf9+MGxleMWZETMBiPJMyMV0XNjJmRXl//rDP7F7Cdh+ca3J9KZUw978/MegYOLmFtEwZtuE4vEcZZGb1DMALtM3gsq4H8mTluQXgLOueQKsLwxZcdPcxuBXZK0L+DRhYc2EMBunWVHT1M5gbihz/RuMjebr/hFEcHkziBvep0LK7MwSgo7ehgJlY2jry/XTlzOczvOXvhfL5CMwe9higsOcy8bkyKHEmqZi6DWaQXbmUfT+KZy2Bm5/xXCA44FBPbkcEsGsG8KO0fWLQlkMUkfLn0cYOxH3LrjNSAdUZqbKXumS9tTbJtcRjAuwAAAABJRU5ErkJggg==" alt="Andy"></td>
-                                    <td><span class="mr-3">Andy</span></td>
-                                    <td><small>andy@gmail.com</small></td>
+                                    <td><span class="rounded"><img class="avatar rounded" avatar="Theo"></span></td>
+                                    <td><span class="mr-3">Theo</span></td>
+                                    <td><small>Theo@gmail.com</small></td>
                                     <td>
                                         <span>12 feb, 2019</span>
                                     </td>
                                     <td><span class="badge alert-primary text-primary px-2">approved</span></td>
                                 </tr>
                                 <tr>
-                                    <td><img class="rounded-circle" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAA90lEQVRYR+2WPQ6CQBBGHwegpCKegFsQrgEVnQews6DjAJQ0cg5s6Oj1AsaK0o4GQwyVbHQ24l+Getl9fPNmFgeGgS95HIUxVEKTMSmqyWgy0vH1287EMRQFuO78d5clpKk0k9t6cTKPYMZN6xqiSA5kDdO29wdmGWw20HWQJLDfy4BeCjMefTjAagXrNVTVB2GmEp5OEAQykEWcuVzsUlkEpu8hz2G7fWMycwKHIex24Hl2QC8XeOqoppG39//CTGXyfbCZxNbJmK6DUdvz+c1DzwRzPNrNGKvWljfs82+Iy/T81vKVCqP/wFJr1Bl1Rp2RJmBafwUz5J3eUqGFmgAAAABJRU5ErkJggg==" alt="bob"></td>
-                                    <td><span class="mr-3">Bob</span><small>bob@gmail.com</small></td>
-                                    <td><small>bob@gmail.com</small></td>
-                                    <td><span>12 feb, 2019</span></td>
-                                    <td><span class="badge alert-primary text-primary px-2">aproved</span></td>
-                                </tr>
-                                <tr>
-                                    <td><img class="rounded-circle" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAhUlEQVRYR+2WwQkAIQwE16ZswHIsyzbsygI8/BshC+G8Y30LbsZJNE1g4pKVFMa4CZGxFBUZkfGOrx840ztQil34GECtQGsuOByZ68LkTFV/QsWTUZgd15MzpLzrGP6arG56JYycsZwRGZFxPWkxm7k5E5OFHHoKE0RAH3IvWHWTnPm0Mw+0y4HeWgYtbgAAAABJRU5ErkJggg==" alt="faties"></td>
-                                    <td><span class="mr-3">Faties</span></td>
-                                    <td><small>fatie@gmail.com</small></td>
+                                    <td><span class="rounded"><img class="avatar rounded" avatar="Bob"></span></td>
+                                    <td><span class="mr-3">Bob</span></td>
+                                    <td><small>Bob@gmail.com</small></td>
                                     <td>
                                         <span>12 feb, 2019</span>
                                     </td>
-                                    <td><span class="badge alert-primary text-primary px-2">aproved</span></td>
+                                    <td><span class="badge alert-primary text-primary px-2">approved</span></td>
                                 </tr>
                                 <tr>
-                                    <td><img class="rounded-circle" width="35" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAA8ElEQVRYR2NkaGD4zzBIAOOoY3DExGjI4EqioyEzGjKkFl9DO83sidvD4KzojNXTn399Zsjems2w+NJiUgMFrJ7kkMHnGJgL5p6fy5CyKYVkB5HlGDNpM6whMMdvDkOyYTLDr7+/GDqPdjLU7a8jyUFUdQzIZpiD9t7fy+CyyGVgHeOk6MSwKHAR2BFx6+MY9t3fR7SDqB4yIJuvZl1lkOWXJTkxjzqGatUBKGvjyk0gSwZVmhk0uQnmEHJLYrISMK7qYEBK4EFTNxFdgpGhkORoIsMOorWMOoZqhR7RYU6GwtFoGo0mUpPNaJoZEmkGAMEyxIEIiLLMAAAAAElFTkSuQmCC" alt="Doe"></td>
-                                    <td><span class="mr-3">doe</span></td>
-                                    <td><small>doe@gmail.com</small></td>
+                                    <td><span class="rounded"><img class="avatar rounded" avatar="charity"></span></td>
+                                    <td><span class="mr-3">charity</span></td>
+                                    <td><small>charity@gmail.com</small></td>
                                     <td>
                                         <span>12 feb, 2019</span>
                                     </td>
-                                    <td><span class="badge alert-warning text-warning px-2">pending</span></td>
+                                    <td><span class="badge alert-primary text-primary px-2">approved</span></td>
                                 </tr>
-
+                                <tr>
+                                    <td><span class="rounded"><img class="avatar rounded" avatar="swaibu"></span></td>
+                                    <td><span class="mr-3">swaibu</span></td>
+                                    <td><small>swaibu@gmail.com</small></td>
+                                    <td>
+                                        <span>12 feb, 2019</span>
+                                    </td>
+                                    <td><span class="badge alert-primary text-primary px-2">approved</span></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -355,103 +346,167 @@
                     <div class="card-header card-header-sm bg-white">
                         chat Requests <span class="badge badge-primary float-right mt-n3">4 messages</span>
                     </div>
-                    <div class="card-body chat p-2">
-                        <div class="input-group mb-2">
-                            <span class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class="fas fa-user"></i>
+                    <div class="card-body  p-2">
+                        <div class="threads d-none ">
+                            <div class="input-group mb-2">
+                                <span class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
                                 </span>
-                            </span>
-                            <input type="search" class="form-control">
+                                <input type="search" class="form-control">
+                            </div>
+                            <ul class="media-list media-list-users list-group chat">
+                                <li class="list-group-item">
+                                    <div class="media w-100">
+                                        <img class="avatar rounded-circle mr-3" src="assets/images/theo.jpg">
+                                        <div class="media-body align-self-center">
+                                            <button class="btn btn-outline-primary btn-sm float-right">
+                                                <span class="icon icon-add-user"></span> chat
+                                            </button>
+                                            <strong>Theo</strong>
+                                            <small>online</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="media w-100">
+                                        <img class="avatar rounded-circle mr-3" src="assets/images/bob.jpg">
+                                        <div class="media-body align-self-center">
+                                            <button class="btn btn-outline-primary btn-sm float-right">
+                                                <span class="icon icon-add-user"></span> chat
+                                            </button>
+                                            <strong>Bob</strong>
+                                            <small>online</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="media w-100">
+                                        <img class="avatar rounded-circle mr-3" src="assets/images/charity.jpg">
+                                        <div class="media-body align-self-center">
+                                            <button class="btn btn-outline-primary btn-sm float-right">
+                                                <span class="icon icon-add-user"></span> chat
+                                            </button>
+                                            <strong>charity</strong>
+                                            <small>online</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="media w-100">
+                                        <img class="avatar rounded-circle mr-3" src="assets/images/theo.jpg">
+                                        <div class="media-body align-self-center">
+                                            <button class="btn btn-outline-primary btn-sm float-right">
+                                                <span class="icon icon-add-user"></span> chat
+                                            </button>
+                                            <strong>nheo</strong>
+                                            <small>online</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="media w-100">
+                                        <img class="avatar rounded-circle mr-3" src="assets/images/bob.jpg">
+                                        <div class="media-body align-self-center">
+                                            <button class="btn btn-outline-primary btn-sm float-right">
+                                                <span class="icon icon-add-user"></span> chat
+                                            </button>
+                                            <strong>kob</strong>
+                                            <small>online</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="media w-100">
+                                        <img class="avatar rounded-circle mr-3" src="assets/images/charity.jpg">
+                                        <div class="media-body align-self-center">
+                                            <button class="btn btn-outline-primary btn-sm float-right">
+                                                <span class="icon icon-add-user"></span> chat
+                                            </button>
+                                            <strong>xharity</strong>
+                                            <small>online</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="media w-100">
+                                        <img class="avatar rounded-circle mr-3" src="assets/images/charity.jpg">
+                                        <div class="media-body align-self-center">
+                                            <button class="btn btn-outline-primary btn-sm float-right">
+                                                <span class="icon icon-add-user"></span> chat
+                                            </button>
+                                            <strong>test3</strong>
+                                            <small>online</small>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="media-list media-list-users list-group">
-                            <li class="list-group-item">
-                                <div class="media w-100">
-                                    <img class="avatar rounded-circle mr-3" src="assets/images/theo.jpg">
-                                    <div class="media-body align-self-center">
-                                        <button class="btn btn-outline-primary btn-sm float-right">
-                                            <span class="icon icon-add-user"></span> chat
-                                        </button>
-                                        <strong>Theo</strong>
-                                        <small>online</small>
+
+                        <!-- chat conversation -->
+                        <div class="conversation">
+                            <div class="chat ">
+                                <div class="d-flex justify-content-start mb-2">
+                                    <div class="bubble bubble-left bg-light">
+                                        Hi, how are you samim?
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="media w-100">
-                                    <img class="avatar rounded-circle mr-3" src="assets/images/bob.jpg">
-                                    <div class="media-body align-self-center">
-                                        <button class="btn btn-outline-primary btn-sm float-right">
-                                            <span class="icon icon-add-user"></span> chat
-                                        </button>
-                                        <strong>Bob</strong>
-                                        <small>online</small>
+                                <div class="d-flex justify-content-end mb-2">
+                                    <div class="bubble bubble-right bg-primary text-white ">
+                                        Hi Maryam i am good tnx how about you?
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="media w-100">
-                                    <img class="avatar rounded-circle mr-3" src="assets/images/charity.jpg">
-                                    <div class="media-body align-self-center">
-                                        <button class="btn btn-outline-primary btn-sm float-right">
-                                            <span class="icon icon-add-user"></span> chat
-                                        </button>
-                                        <strong>charity</strong>
-                                        <small>online</small>
+                                <div class="d-flex justify-content-start mb-2 ml-2">
+                                    <div class="bubble bubble-left bg-light">
+                                        I am good too, thank you for your chat template
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="media w-100">
-                                    <img class="avatar rounded-circle mr-3" src="assets/images/theo.jpg">
-                                    <div class="media-body align-self-center">
-                                        <button class="btn btn-outline-primary btn-sm float-right">
-                                            <span class="icon icon-add-user"></span> chat
-                                        </button>
-                                        <strong>nheo</strong>
-                                        <small>online</small>
+                                <div class="d-flex justify-content-end mb-2">
+                                    <div class="bubble bubble-right bg-primary text-white">
+                                        You welcome Maryam
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="media w-100">
-                                    <img class="avatar rounded-circle mr-3" src="assets/images/bob.jpg">
-                                    <div class="media-body align-self-center">
-                                        <button class="btn btn-outline-primary btn-sm float-right">
-                                            <span class="icon icon-add-user"></span> chat
-                                        </button>
-                                        <strong>kob</strong>
-                                        <small>online</small>
+                                <div class="d-flex justify-content-start mb-2">
+                                    <div class="bubble bubble-left bg-light">
+                                        I am looking for your next templates
                                     </div>
                                 </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="media w-100">
-                                    <img class="avatar rounded-circle mr-3" src="assets/images/charity.jpg">
-                                    <div class="media-body align-self-center">
-                                        <button class="btn btn-outline-primary btn-sm float-right">
-                                            <span class="icon icon-add-user"></span> chat
-                                        </button>
-                                        <strong>xharity</strong>
-                                        <small>online</small>
+                                <div class="d-flex justify-content-end mb-2">
+                                    <div class="bubble bubble-right bg-primary text-white">
+                                        Ok, thank you have a good day
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
+                                <div class="d-flex justify-content-start mb-2">
+                                    <div class="bubble bubble-left bg-light">
+                                        Bye, see you
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">$</span>
+                                        <span class="input-group-text">0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //chat conversation -->
                     </div>
                 </div>
             </div>
-        </div>
     </main>
     <div class="customizer">
         <button class="btn btn-primary btn-sm rounded  shadow-sm text-white" type="button" data-toggle="collapse" data-target="#customizer" aria-expanded="false" aria-controls="customizer"><i class="fas fa-pencil-alt px-2"></i><span>Customize</span></button>
         <div class="collapse  customize" id="customizer">
             <div class="card card-body">
                 <label class="my-1 mr-2" for="Layout">Layout</label>
-                <select class="form-control form-control-sm">
-                    <option selected>Default</option>
-                    <option value="1">Mini</option>
-                    <option value="2">Top-nav</option>
+                <select class="Layout" class="form-control form-control-sm">
+                    <option value="default">default</option>
+                    <option value="mini">mini</option>
+                    <option value="top-nav">top-nav</option>
                 </select>
             </div>
         </div>
@@ -464,10 +519,61 @@
         </div>
     </footer>
     <script src="assets/libs/jquery/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="assets/libs/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/libs/chartjs/Chart.min.js"></script>
     <script src="assets/libs/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.min.js"></script>
+    <script src="assets/libs/sweetalert2/sweetalert.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.primary').sparkline([10, 8, 5, 7, 4, 4, 4, 3, 4, 5, 6, 5, 8], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#007bff'
+            });
+            $('.warning').sparkline([10, 8, 5, 7, 4, 4, 1, 4, 5, 6, 6, 7, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#ffc107'
+            });
+            $('.info').sparkline([10, 8, 5, 7, 4, 4, 4, 6, 4, 4, 6, 5, 4, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#17a2b8'
+            });
+            $('.danger').sparkline([10, 8, 5, 7, 10, 8, 5, 7, 4, 4, 1], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#dc3545'
+            });
+        });
+    </script>
+    <script>
+        $(".media").click(() => {
+            $('.chat').html('Hello World');
+        });
+
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("select.Layout").change(function() {
+                var selectedLayout = $(this).children("option:selected").val();
+                $("body").removeClass('mini top-nav').addClass(selectedLayout)
+
+            });
+        });
+    </script>
 </body>
 
 </html>

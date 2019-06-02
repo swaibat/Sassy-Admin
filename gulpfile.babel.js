@@ -2,12 +2,10 @@
 // Load plugins
 import browsersync from 'browser-sync'
 import cleanCSS from'gulp-clean-css'
-import concat from 'gulp-concat'
 import del from 'del'
 import gulp from 'gulp'
 import htmlbeautify from 'gulp-html-beautify'
 import panini from 'panini'
-import merge from 'merge-stream'
 import rename from "gulp-rename"
 import sass from 'gulp-sass'
 import uglify from 'gulp-uglify'
@@ -54,8 +52,10 @@ export function html() {
 export function styles() {
   return gulp.src('./src/scss/*.scss')
     .pipe(sass())
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(cleanCSS())
-    .pipe(concat('style.min.css'))
     .pipe(gulp.dest("./dist/assets/css/"));
 }
 
@@ -74,7 +74,7 @@ export function scripts() {
 
 export function others() {
     return gulp
-    .src(['./src/**/**/*','!./src/scss/**','!./src/html/**','!./src/js/**'])
+    .src(['./src/**/**/*','!./src/scss/**','!./src/html/**'])
     .pipe(gulp.dest('./dist/assets/'));
 }
 

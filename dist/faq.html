@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <!-- <link rel="stylesheet" href="assets/libs/malihu-custom/jquery.mCustomScrollbar.css"> -->
+    <link rel="stylesheet" href="assets/libs/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/libs/iziToast/iziToast.min.css">
+    <link rel="stylesheet" href="assets/libs/malihu-scroll/jquery.mCustomScrollbar.css">
     <!-- <script src=""></script> -->
 </head>
 
@@ -76,10 +78,10 @@
         <div class="collapse  customize" id="customizer">
             <div class="card card-body">
                 <label class="my-1 mr-2" for="Layout">Layout</label>
-                <select class="form-control form-control-sm">
-                    <option selected>Default</option>
-                    <option value="1">Mini</option>
-                    <option value="2">Top-nav</option>
+                <select class="Layout" class="form-control form-control-sm">
+                    <option value="default">default</option>
+                    <option value="mini">mini</option>
+                    <option value="top-nav">top-nav</option>
                 </select>
             </div>
         </div>
@@ -92,19 +94,70 @@
         </div>
     </footer>
     <script src="assets/libs/jquery/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="assets/libs/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/libs/chartjs/Chart.min.js"></script>
     <script src="assets/libs/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.min.js"></script>
+    <script src="assets/libs/sweetalert2/sweetalert.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.primary').sparkline([10, 8, 5, 7, 4, 4, 4, 3, 4, 5, 6, 5, 8], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#007bff'
+            });
+            $('.warning').sparkline([10, 8, 5, 7, 4, 4, 1, 4, 5, 6, 6, 7, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#ffc107'
+            });
+            $('.info').sparkline([10, 8, 5, 7, 4, 4, 4, 6, 4, 4, 6, 5, 4, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#17a2b8'
+            });
+            $('.danger').sparkline([10, 8, 5, 7, 10, 8, 5, 7, 4, 4, 1], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#dc3545'
+            });
+        });
+    </script>
+    <script>
+        $(".media").click(() => {
+            $('.chat').html('Hello World');
+        });
+
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("select.Layout").change(function() {
+                var selectedLayout = $(this).children("option:selected").val();
+                $("body").removeClass('mini top-nav').addClass(selectedLayout)
+
+            });
+        });
+    </script>
     <div class="customizer">
         <button class="btn btn-primary btn-sm rounded  shadow-sm text-white" type="button" data-toggle="collapse" data-target="#customizer" aria-expanded="false" aria-controls="customizer"><i class="fas fa-pencil-alt px-2"></i><span>Customize</span></button>
         <div class="collapse  customize" id="customizer">
             <div class="card card-body">
                 <label class="my-1 mr-2" for="Layout">Layout</label>
-                <select class="form-control form-control-sm">
-                    <option selected>Default</option>
-                    <option value="1">Mini</option>
-                    <option value="2">Top-nav</option>
+                <select class="Layout" class="form-control form-control-sm">
+                    <option value="default">default</option>
+                    <option value="mini">mini</option>
+                    <option value="top-nav">top-nav</option>
                 </select>
             </div>
         </div>
@@ -117,10 +170,61 @@
         </div>
     </footer>
     <script src="assets/libs/jquery/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="assets/libs/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/libs/chartjs/Chart.min.js"></script>
     <script src="assets/libs/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.min.js"></script>
+    <script src="assets/libs/sweetalert2/sweetalert.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.primary').sparkline([10, 8, 5, 7, 4, 4, 4, 3, 4, 5, 6, 5, 8], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#007bff'
+            });
+            $('.warning').sparkline([10, 8, 5, 7, 4, 4, 1, 4, 5, 6, 6, 7, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#ffc107'
+            });
+            $('.info').sparkline([10, 8, 5, 7, 4, 4, 4, 6, 4, 4, 6, 5, 4, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#17a2b8'
+            });
+            $('.danger').sparkline([10, 8, 5, 7, 10, 8, 5, 7, 4, 4, 1], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#dc3545'
+            });
+        });
+    </script>
+    <script>
+        $(".media").click(() => {
+            $('.chat').html('Hello World');
+        });
+
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("select.Layout").change(function() {
+                var selectedLayout = $(this).children("option:selected").val();
+                $("body").removeClass('mini top-nav').addClass(selectedLayout)
+
+            });
+        });
+    </script>
 </body>
 
 </html>
