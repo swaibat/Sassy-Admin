@@ -1,0 +1,23 @@
+- name: primary
+  title: Users
+  value: 500
+  percent: +58.00%
+  icon: fas fa-users
+
+- name: warning
+  title: page Views
+  value: 13000
+  percent: +48.34%
+  icon: fas fa-eye
+
+- name: info
+  title: Sales
+  value: 24000
+  percent: +68.34%
+  icon: fas fa-coins
+
+- name: danger
+  title: Products
+  percent: +20.14%
+  value: 3000
+  icon: fas fa-store

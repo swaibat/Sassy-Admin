@@ -3,10 +3,10 @@
 <div class="collapse  customize" id="customizer">
     <div class="card card-body">
         <label class="my-1 mr-2" for="Layout">Layout</label>
-        <select class="form-control form-control-sm">
-          <option selected>Default</option>
-          <option value="1">Mini</option>
-          <option value="2">Top-nav</option>
+        <select class="Layout" class="form-control form-control-sm">
+          <option value="default">default</option>
+          <option value="mini">mini</option>
+          <option value="top-nav">top-nav</option>
         </select>
     </div>
   </div>
@@ -18,9 +18,41 @@
         </div>
     </div>
 </footer>
-<script src="{{root}}assets/libs/jquery/jquery.min.js"></script>
-<script src="{{root}}assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{root}}assets/libs/jquery/jquery.slim.min.js"></script>
+<script src="{{root}}assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="{{root}}assets/libs/chartjs/Chart.bundle.min.js"></script>
 <script src="{{root}}assets/libs/chartjs/Chart.min.js"></script>
-<script src="{{root}}assets/libs/malihu-custom/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{root}}assets/libs/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="{{root}}assets/js/app.min.js"></script>
+<script src="{{root}}assets/libs/sparkline/jquery.sparkline.min.js"></script>
+<script src="{{root}}assets/libs/datatables/dataTables.min.js"></script>
+<script src="{{root}}assets/libs/sweetalert2/sweetalert.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.primary').sparkline([10,8,5,7,4,4,4,3,4,5,6,5,8], {type: 'bar',height: '35',width: '100%',barColor: '#007bff'} );
+        $('.warning').sparkline([10,8,5,7,4,4,1,4,5,6,6,7,4], {type: 'bar',height: '35',width: '100%', barColor: '#ffc107'} );
+        $('.info').sparkline([10,8,5,7,4,4,4,6,4,4,6,5,4,4], {type: 'bar',height: '35',width: '100%', barColor: '#17a2b8'} );
+        $('.danger').sparkline([10,8,5,7,10,8,5,7,4,4,1], {type: 'bar',height: '35',width: '100%', barColor: '#dc3545'} );
+    });
+    </script>
+<script>
+$( ".media" ).click(()=>{
+    $('.chat').html('Hello World');
+});
+
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+
+<script type="text/javascript">
+
+
+    $(document).ready(function(){
+        $("select.Layout").change(function(){
+            var selectedLayout = $(this).children("option:selected").val();
+                $("body").removeClass('mini top-nav').addClass(selectedLayout)
+                
+        });
+    });
+    </script>

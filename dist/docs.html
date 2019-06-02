@@ -7,159 +7,388 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <!-- <link rel="stylesheet" href="assets/libs/malihu-custom/jquery.mCustomScrollbar.css"> -->
+    <link rel="stylesheet" href="assets/libs/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/libs/iziToast/iziToast.min.css">
+    <link rel="stylesheet" href="assets/libs/malihu-scroll/jquery.mCustomScrollbar.css">
     <!-- <script src=""></script> -->
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-primary justify-content-between fixed-top shadow-sm">
-        <a class="navbar-brand text-white">Sassy-Admin</a>
-        <span class="badge bg-white">V1.0.0</span>
-    </nav>
-    <div class="hero  bg-primary mt-n3 p-5 text-white ">
-        <h1 class="text-center">Documentation</h1>
-        <P>SASSY ADMIN is an SASS modern theme built with BOOTSTRAP framework and GULP workflow and other libraries like CHARTJS,JQUERY,POPPERJS. The theme It includes multiple bootstrap and custom components for easy re-usability,its fully customizable via sass variables with a click so developer get ease in customization of the theme . built by a team of professional designers.</P>
-    </div>
-    <div class=" mt-5">
-        <div class="row">
-            <div class="col-lg-2">
-                <nav id="navbar-example3" class="navbar navbar-light rounded bg-light docs-nav position-fixed shadow-sm">
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link" href="#item-1">Introduction</a>
-                        <a class="nav-link" href="#item-2">Project Overview</a>
-                        <a class="nav-link" href="#item-3">Folder Strucure</a>
-                        <a class="nav-link" href="#item-4">Custom Build</a>
-                        <a class="nav-link" href="#item-5">starter Template</a>
-                        <a class="nav-link" href="#item-6">Whats New</a>
-                        <a class="nav-link" href="#item-7">Libraries</a>
-                        <a class="nav-link" href="#item-8">new components</a>
-                        <a class="nav-link" href="#item-9">Other softwares used</a>
-                        <a class="nav-link" href="#item-10">Change of log</a>
+    <script src="assets/libs/prism/prism.js"></script>
+    <link href="assets/libs/prism/prism.css" rel="stylesheet" type="text/css">
+    <div class="doc">
+        <nav class="navbar navbar-light bg-primary justify-content-between fixed-top shadow-sm">
+            <a class="navbar-brand text-white">Sassy-Admin</a>
+            <span class="badge bg-white">V1.0.0</span>
+        </nav>
+        <div class="hero  bg-primary mt-n3 p-5 text-white ">
+            <h1 class="text-center">Documentation</h1>
+            <P>SASSY ADMIN is an SASS modern theme built with BOOTSTRAP framework and GULP workflow and other libraries like CHARTJS,JQUERY,POPPERJS. The theme It includes multiple bootstrap and custom components for easy re-usability,its fully customizable via sass variables with a click so developer get ease in customization of the theme . built by a team of professional designers.</P>
+        </div>
+        <div class=" mt-5">
+            <div class="row">
+                <div class="col-lg-2">
+                    <nav id="navbar-example3" class="navbar navbar-light rounded bg-light docs-nav position-fixed shadow-sm">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Introduction</a>
+                            <a class="nav-link" href="#item-2">Project Overview</a>
+                            <a class="nav-link" href="#item-3">Folder Strucure</a>
+                            <a class="nav-link" href="#item-4">Custom Build</a>
+                            <a class="nav-link" href="#item-5">starter Template</a>
+                            <a class="nav-link" href="#item-6">Whats New</a>
+                            <a class="nav-link" href="#item-7">Libraries</a>
+                            <a class="nav-link" href="#item-8">new components</a>
+                            <a class="nav-link" href="#item-9">Other softwares used</a>
+                            <a class="nav-link" href="#item-10">Change of log</a>
+                        </nav>
                     </nav>
-                </nav>
-            </div>
-            <div class="col-lg-9 container">
-                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2">
+                </div>
+                <div class="col-lg-9 container">
+                    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2">
 
-                    <!-- introuction -->
-                    <h4 id="item-1">Item 1</h4>
-                    <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+                        <!-- introuction -->
+                        <h4 id="item-1">Item 1</h4>
+                        <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
 
-                    <!-- Overview -->
-                    <h5 id="item-2">Item 1-1</h5>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gqOEoUR5RHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- Overview -->
+                        <h5 id="item-2">Item 1-1</h5>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gqOEoUR5RHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-5">hellosssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
                         </div>
-                        <div class="col-md-6">hello</div>
+
+                        <!-- folder structure -->
+                        <h5 id="item-3">Item 2-2</h5>
+                        <div class="direct mb-3 bg-white">
+                            <ul>
+                                <li class="root">
+                                    Sassy
+                                </li>
+                                <li>
+                                    <i class="fas fa-folder mr-2 text-warning"></i>dist
+                                </li>
+                                <li>
+                                    <i class="fas fa-folder mr-2 text-warning"></i>src
+                                    <ul>
+                                        <li><i class="fas fa-folder mr-2 text-warning"></i>fonts</li>
+                                        <li><i class="fas fa-folder mr-2 text-warning"></i>html</li>
+                                        <li><i class="fas fa-folder mr-2 text-warning"></i>images</li>
+                                        <li><i class="fas fa-folder mr-2 text-warning"></i>js</li>
+                                        <li><i class="fas fa-folder mr-2 text-warning"></i>libs</li>
+                                        <li><i class="fas fa-folder mr-2 text-warning"></i>scss</li>
+                                    </ul>
+                                </li>
+                                <li><i class="far fa-file-alt mr-1 text-primary"></i>.babelrc</li>
+                                <li><i class="fab fa-git-alt text-danger"></i> .gitignore</li>
+                                <li><i class="fab fa-gulp mr-1 text-danger"></i> gulpfile.babel.js</li>
+                                <li><i class="fab fa-node-js mr-1 text-success "></i> package.json</li>
+                                <li><i class="fas fa-info-circle mr-2 text-primary"></i> README.md</li>
+                            </ul>
+                        </div>
+                        <!-- Get started -->
+                        <h4 id="item-4">Get started</h4>
+                        <p>To view your Bootstrap Theme documentation, located in the <code>docs</code>directory and open docs.html in your favorite browser.all tutorials will be available plus the video on how to get started with sassy admin theme </p>
+                        <figure class="docs-code"><code>$ open docs/docs.html</code></figure>
+                        <p>Incase you want to access the default built files for thids project simply open the <code>dist</code> folder located at the root of the theme and you will be able to access all the built content <code>HTML</code>, <code>CSS</code> and <code>JAVASCRIPT </code> files</p>
+                        <figure class="docs-code"><code>$ open root/dist/</code></figure>
+                        <!-- Custom build -->
+                        <h4 id="item-4">gulp workflow</h4>
+                        <p>We have used Gulp workflow for easy customization and automation of this project thats why we have included a <code>Gulpfile</code> and used <code>Babeljs</code> to support <code>es6</code> in our project thats why the gulpfile is having an extention of babel <code>gulpfile.babel.js</code>
+                        </p>
+                        <p>Before installation of the application make sure you have <code>nodejs</code> on your machine you can download if from official website <a href="https://gulpjs.com/">nodejs.org</a>, This will enable us install run and install necessary packages that have been used in our project</p>
+                        <p>The run this command to install <code>Gulp</code> on your local machine</p>
+                        <figure class="docs-code"><code>$ npm install gulp-cli -g</code></figure>
+                        <p>After make sure all theme dependencies are installed by runing the following command or else the themwe may fail to work</p>
+                        <figure class="docs-code"><code>$ npm install</code></figure>
+                        <p>After you can modify and customize the app according to your requirements and desires and after run the project by simply typing gulp in terminal</p>
+                        <figure class="docs-code"><code>$ gulp</code></figure>
+                        <p>if you have any question about the gulp workflow run <code> $ gulp --help</code> in commandline or visit <a href="https://gulpjs.com/">gulpjs.com</a></p>
+
+                        <!-- starter template -->
+                        <h4 id="item-5">Theme source code</h4>
+                        <p>The <code>dist/</code> folder contains ready to view compiled theme</p>
+                        <p>Simply open the source folder <code>/src</code> you will find <code>HTML</code> , <code>JS</code> , <code>IMAGES</code> and <code>SCSS</code> folders</p>
+                        <b>NOTE:This folder is mearnt to be for customizing your theme which is later compiled to the dist folder <span class="text-danger">not for viewing the theme</span></b>
+                        <ul>
+                            <li><code>HTML</code> This folder contains all our basic pages and partials that are included before compling and cutomizing of HTMl Is done here </li>
+                            <li><code>IMAGES</code> The folder includes image files to be used in our project like logo favicon and others </li>
+                            <li><code>JS</code> The folder contains all javascript files and libraries that have been used in our project</li>
+                            <li><code>SCSS</code> The folder contains scss files that are later compiled to css </li>
+                        </ul>
+                        <p>The <code>docs/</code> folder includes the source code for our documentation.</p>
+                        <p>The remaining files not specifically mentioned above provide support for packages, license information, and development.</p>
+
+                        <!-- starter template -->
+                        <h4 id="item-6">Custom Build</h4>
+                        <p>Change and customize the theme to your exact needs by changing varaiables of the theme additionally you can add more componets</p>
+
+
+
+                        <!-- starter template -->
+                        <h4 id="item-7">starter Template</h4>
+                        <pre><code class="language-markup"> 
+                <span class="cp">&lt;!DOCTYPE html&gt;</span>
+                  <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;head&gt;</span>
+                      <span class="c">&lt;!-- These meta tags come first. --&gt;</span>
+                      <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+                  
+                      <span class="nt">&lt;title&gt;</span>Bootstrap Theme Example<span class="nt">&lt;/title&gt;</span>
+                  
+                      <span class="c">&lt;!-- Include the CSS --&gt;</span>
+                      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"dist/toolkit.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+                  
+                    <span class="nt">&lt;/head&gt;</span>
+                    <span class="nt">&lt;body&gt;</span>
+                      <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+                  
+                      <span class="c">&lt;!-- Include jQuery (required) and the JS --&gt;</span>
+                      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"dist/toolkit.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                    <span class="nt">&lt;/body&gt;</span>
+                  <span class="nt">&lt;/html&gt;</span></code></pre>
+                        <!-- New components -->
+                        <h5 id="item-8">Whats new</h5>
+                        <ul>
+                            <li><b>chartjs </b> get it <a href="https://www.chartjs.org/">Here</a></li>
+                            <li><b>datatables </b> get it <a href="https://datatables.net/">Here</a></li>
+                            <li><b>jquery </b> get it <a href="https://jquery.com/">Here</a></li>
+                            <li><b>malihu scroll </b>get it <a href="http:manos.malihu.gr/jquery-custom-content-scroller/">Here</a></li>
+                            <li><b>popperjs </b> get it <a href="https://popper.js.org/">Here</a></li>
+                            <li><b>prismjs </b> get it <a href="https://prismjs.com/">Here</a></li>
+                            <li><b>sparkline </b> get it <a href="https://omnipotent.net/jquery.sparkline/">Here</a></li>
+                        </ul>
+
+                        <!-- libriaries -->
+                        <h5 id="item-9">Libraries/plugins</h5>
+                        <br>
+                        <h5>components</h5>
+                        <hr>
+                        <div class="row page-content m-0">
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card card1 ">
+                                    <div class="card-header bg-primary pt-1 pb-1">
+                                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                                    </div>
+
+                                    <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
+                                        <div class="mt-1 ml-2 btn-pill alert-primary text-primary rounded "><i class="far fa-image"></i></div>
+                                        <div class="pb-4 px-3">
+                                            <b class="d-block  counter-value">$120</b>
+                                            <small class="text-primary ">+48.34%</small>
+                                        </div>
+                                        <div class="chart py-2  flex-fill">
+                                            <div class="pl-1">
+                                                <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // end of card     -->
+
+                            <div class="col-lg-3 col-md-6 mb-3 mb-4">
+                                <div class="card card1 ">
+                                    <div class="card-header bg-warning pt-1 pb-1">
+                                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                                    </div>
+
+                                    <div class="card-body rounded p-1 bg-white mt-n3 mx-n1  d-flex flex-row">
+                                        <div class="mt-1 ml-2 btn-pill alert-warning text-warning rounded "><i class="far fa-image"></i></div>
+                                        <div class="pb-4 px-3">
+                                            <b class="d-block  counter-value">$120</b>
+                                            <small class="text-warning ">+48.34%</small>
+                                        </div>
+                                        <div class="chart py-2  flex-fill">
+                                            <div class="pl-1">
+                                                <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // end of card     -->
+                            <div class="col-lg-3 col-md-6 mb-3 mb-4">
+                                <div class="card card1">
+                                    <div class="card-header bg-info pt-1 pb-1">
+                                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                                    </div>
+
+                                    <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
+                                        <div class="mt-1 ml-2 btn-pill alert-info text-info rounded "><i class="far fa-image"></i></div>
+                                        <div class="pb-4 px-3">
+                                            <b class="d-block  counter-value">$120</b>
+                                            <small class="text-info ">+48.34%</small>
+                                        </div>
+                                        <div class="chart py-2  flex-fill">
+                                            <div class="pl-1">
+                                                <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // end of card     -->
+
+                            <div class="col-lg-3 col-md-6 mb-3 mb-4">
+                                <div class="card card1 ">
+                                    <div class="card-header bg-danger pt-1 pb-1">
+                                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                                    </div>
+
+                                    <div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
+                                        <div class="mt-1 ml-2 btn-pill alert-danger text-danger rounded "><i class="far fa-image"></i></div>
+                                        <div class="pb-4 px-3">
+                                            <b class="d-block  counter-value">$120</b>
+                                            <small class="text-danger ">+48.34%</small>
+                                        </div>
+                                        <div class="chart py-2  flex-fill">
+                                            <div class="pl-1">
+                                                <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre><code class="language-markup">
+                  &lt;!DOCTYPE html>
+                  &lt;div class="row page-content m-0">
+                      &lt;div class="col-lg-3 col-md-6 mb-4">
+                          &lt;div class="card card1 ">
+                              &lt;div class="card-header bg-primary pt-1 pb-1">
+                                  &lt;p class="text-white">ALL USERS &lt;small class="float-right">Weekly stats&lt;/small>&lt;/p>
+                              &lt;/div>
+          
+                              &lt;div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
+                                  &lt;div class="mt-1 ml-2 btn-pill alert-primary text-primary rounded ">&lt;i class="far fa-image">&lt;/i>&lt;/div>
+                                  &lt;div class="pb-4 px-3">
+                                      &lt;b class="d-block  counter-value">$120&lt;/b>
+                                      &lt;small class="text-primary ">+48.34%&lt;/small>
+                                  &lt;/div>
+                                  &lt;div class="chart py-2  flex-fill">
+                                      &lt;div class="pl-1">
+                                          &lt;canvas id="myChartC" class="w-100" height="50">&lt;/canvas>
+                                      &lt;/div>
+                                  &lt;/div>
+                              &lt;/div>
+                          &lt;/div>
+                      &lt;/div>
+                      &lt;!-- // end of card     -->
+          
+                      &lt;div class="col-lg-3 col-md-6 mb-3 mb-4">
+                          &lt;div class="card card1 ">
+                              &lt;div class="card-header bg-warning pt-1 pb-1">
+                                  &lt;p class="text-white">ALL USERS &lt;small class="float-right">Weekly stats&lt;/small>&lt;/p>
+                              &lt;/div>
+          
+                              &lt;div class="card-body rounded p-1 bg-white mt-n3 mx-n1  d-flex flex-row">
+                                  &lt;div class="mt-1 ml-2 btn-pill alert-warning text-warning rounded ">&lt;i class="far fa-image">&lt;/i>&lt;/div>
+                                  &lt;div class="pb-4 px-3">
+                                      &lt;b class="d-block  counter-value">$120&lt;/b>
+                                      &lt;small class="text-warning ">+48.34%&lt;/small>
+                                  &lt;/div>
+                                  &lt;div class="chart py-2  flex-fill">
+                                      &lt;div class="pl-1">
+                                          &lt;canvas id="myChartC" class="w-100" height="50">&lt;/canvas>
+                                      &lt;/div>
+                                  &lt;/div>
+                              &lt;/div>
+                          &lt;/div>
+                      &lt;/div>
+                      &lt;!-- // end of card     -->
+                      &lt;div class="col-lg-3 col-md-6 mb-3 mb-4">
+                          &lt;div class="card card1">
+                              &lt;div class="card-header bg-info pt-1 pb-1">
+                                  &lt;p class="text-white">ALL USERS &lt;small class="float-right">Weekly stats&lt;/small>&lt;/p>
+                              &lt;/div>
+          
+                              &lt;div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
+                                  &lt;div class="mt-1 ml-2 btn-pill alert-info text-info rounded ">&lt;i class="far fa-image">&lt;/i>&lt;/div>
+                                  &lt;div class="pb-4 px-3">
+                                      &lt;b class="d-block  counter-value">$120&lt;/b>
+                                      &lt;small class="text-info ">+48.34%&lt;/small>
+                                  &lt;/div>
+                                  &lt;div class="chart py-2  flex-fill">
+                                      &lt;div class="pl-1">
+                                          &lt;canvas id="myChartC" class="w-100" height="50">&lt;/canvas>
+                                      &lt;/div>
+                                  &lt;/div>
+                              &lt;/div>
+                          &lt;/div>
+                      &lt;/div>
+                      &lt;!-- // end of card     -->
+          
+                      &lt;div class="col-lg-3 col-md-6 mb-3 mb-4">
+                          &lt;div class="card card1 ">
+                              &lt;div class="card-header bg-danger pt-1 pb-1">
+                                  &lt;p class="text-white">ALL USERS &lt;small class="float-right">Weekly stats&lt;/small>&lt;/p>
+                              &lt;/div>
+          
+                              &lt;div class="card-body rounded p-1 bg-white mt-n3 mx-n1 d-flex flex-row">
+                                  &lt;div class="mt-1 ml-2 btn-pill alert-danger text-danger rounded ">&lt;i class="far fa-image">&lt;/i>&lt;/div>
+                                  &lt;div class="pb-4 px-3">
+                                      &lt;b class="d-block  counter-value">$120&lt;/b>
+                                      &lt;small class="text-danger ">+48.34%&lt;/small>
+                                  &lt;/div>
+                                  &lt;div class="chart py-2  flex-fill">
+                                      &lt;div class="pl-1">
+                                          &lt;canvas id="myChartC" class="w-100" height="50">&lt;/canvas>
+                                      &lt;/div>
+                                  &lt;/div>
+                              &lt;/div>
+                          &lt;/div>
+                      &lt;/div>
+                  &lt;/div>
+            </code></pre>
+                        <h5>buttons</h5>
+                        <hr>
+                        <button type="button" class="btn btn-xs btn-default">Default</button>
+                        <button type="button" class="btn btn-xs btn-primary">Primary</button>
+                        <button type="button" class="btn btn-xs btn-success">Success</button>
+                        <button type="button" class="btn btn-xs btn-info">Info</button>
+                        <button type="button" class="btn btn-xs btn-warning">Warning</button>
+                        <button type="button" class="btn btn-xs btn-danger">Danger</button>
+                        <pre><code class="language-markup">
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-xs btn-default-outline"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-xs btn-primary-outline"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-xs btn-success-outline"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-xs btn-info-outline"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-xs btn-warning-outline"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-xs btn-danger-outline"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+                </code></pre>
+                        <h5>Utilitiea</h5>
+                        <hr>
+                        <!-- Change of log -->
+                        <h5 id="item-10">other softwares</h5>
+                        <ul>
+                            <li><b>Fontawesome</b> get it <a href="https://www.chartjs.org/">Here</a></li>
+                            <li><b>jquery </b> get it <a href="https://jquery.com/">Here</a></li>
+                        </ul>
+                        <!-- libriaries -->
+                        <h5 id="item-9">Change of log</h5>
+                        <p>culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
+
                     </div>
-
-                    <!-- folder structure -->
-                    <h5 id="item-3">Item 2-2</h5>
-                    <figure class="docs-code rounded">
-                        <pre><code class="language-bash" data-lang="bash">
-                  theme/
-                    ├── gulpfile.js
-                    ├── package.json
-                    ├── README.md
-                    ├── docs/
-                    ├── less/
-                    │   ├── bootstrap/
-                    │   ├── custom/
-                    │   ├── variables.less
-                    │   └── toolkit.less
-                    ├── js/
-                    │   ├── bootstrap/
-                    │   └── custom/
-                    ├── fonts/
-                    │   ├── bootstrap-entypo.eot
-                    │   ├── bootstrap-entypo.svg
-                    │   ├── bootstrap-entypo.ttf
-                    │   ├── bootstrap-entypo.woff
-                    │   └── bootstrap-entypo.woff2
-                    └── dist/
-                        ├── toolkit.css
-                        ├── toolkit.css.map
-                        ├── toolkit.min.css
-                        ├── toolkit.min.css.map
-                        ├── toolkit.js
-                        └── toolkit.min.js
-                      </code></pre>
-                    </figure>
-                    <!-- Get started -->
-                    <h4 id="item-4">Get started</h4>
-                    <p>To view your Bootstrap Theme documentation, located in the <code>docs</code>directory and open docs.html in your favorite browser.all tutorials will be available plus the video on how to get started with sassy admin theme </p>
-                    <figure class="docs-code"><code>$ open docs/docs.html</code></figure>
-                    <p>Incase you want to access the default built files for thids project simply open the <code>dist</code> folder located at the root of the theme and you will be able to access all the built content <code>HTML</code>, <code>CSS</code> and <code>JAVASCRIPT </code> files</p>
-                    <figure class="docs-code"><code>$ open root/dist/</code></figure>
-                    <!-- Custom build -->
-                    <h4 id="item-4">gulp workflow</h4>
-                    <p>We have used Gulp workflow for easy customization and automation of this project thats why we have included a <code>Gulpfile</code> and used <code>Babeljs</code> to support <code>es6</code> in our project thats why the gulpfile is having an extention of babel <code>gulpfile.babel.js</code>
-                    </p>
-                    <p>Before installation of the application make sure you have <code>nodejs</code> on your machine you can download if from official website <a href="https://gulpjs.com/">nodejs.org</a>, This will enable us install run and install necessary packages that have been used in our project</p>
-                    <p>The run this command to install <code>Gulp</code> on your local machine</p>
-                    <figure class="docs-code"><code>$ npm install gulp-cli -g</code></figure>
-                    <p>After make sure all theme dependencies are installed by runing the following command or else the themwe may fail to work</p>
-                    <figure class="docs-code"><code>$ npm install</code></figure>
-                    <p>After you can modify and customize the app according to your requirements and desires and after run the project by simply typing gulp in terminal</p>
-                    <figure class="docs-code"><code>$ gulp</code></figure>
-                    <p>if you have any question about the gulp workflow run <code> $ gulp --help</code> in commandline or visit <a href="https://gulpjs.com/">gulpjs.com</a></p>
-
-                    <!-- starter template -->
-                    <h4 id="item-5">Theme source code</h4>
-                    <p>The <code>dist/</code> folder contains ready to view compiled theme</p>
-                    <p>Simply open the source folder <code>/src</code> you will find <code>HTML</code> , <code>JS</code> , <code>IMAGES</code> and <code>SCSS</code> folders</p>
-                    <b>NOTE:This folder is mearnt to be for customizing your theme which is later compiled to the dist folder <span class="text-danger">not for viewing the theme</span></b>
-                    <ul>
-                        <li><code>HTML</code> This folder contains all our basic pages and partials that are included before compling and cutomizing of HTMl Is done here </li>
-                        <li><code>IMAGES</code> The folder includes image files to be used in our project like logo favicon and others </li>
-                        <li><code>JS</code> The folder contains all javascript files and libraries that have been used in our project</li>
-                        <li><code>SCSS</code> The folder contains scss files that are later compiled to css </li>
-                    </ul>
-                    <p>The <code>docs/</code> folder includes the source code for our documentation.</p>
-                    <p>The remaining files not specifically mentioned above provide support for packages, license information, and development.</p>
-
-                    <!-- starter template -->
-                    <h4 id="item-6">Custom Build</h4>
-                    <p>Change and customize the theme to your exact needs by changing varaiables of the theme additionally you can add more componets</p>
-
-
-
-                    <!-- starter template -->
-                    <h4 id="item-7">starter Template</h4>
-                    <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
-
-                    <!-- New components -->
-                    <h5 id="item-8">Whats new</h5>
-                    <p>Deserunt quis elit Lorem eiusmod amet enim enim amet minim Lorem proident nostrud. Ea id dolore anim exercitation aute fugiat labore voluptate cillum do laboris labore. Ex velit exercitation nisi enim labore reprehenderit labore nostrud ut ut. Esse officia sunt duis aliquip ullamco tempor eiusmod deserunt irure nostrud irure. Ullamco proident veniam laboris ea consectetur magna sunt ex exercitation aliquip minim enim culpa occaecat exercitation. Est tempor excepteur aliquip laborum consequat do deserunt laborum esse eiusmod irure proident ipsum esse qui.</p>
-
-                    <!-- libriaries -->
-                    <h5 id="item-9">Libraries/plugins</h5>
-                    <p>Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
-
-                    <!-- Change of log -->
-                    <h5 id="item-10">other softwares</h5>
-                    <p>Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
-
-                    <!-- libriaries -->
-                    <h5 id="item-9">Ckange ol logy7</h5>
-                    <p>Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
-
-
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <div class="customizer">
         <button class="btn btn-primary btn-sm rounded  shadow-sm text-white" type="button" data-toggle="collapse" data-target="#customizer" aria-expanded="false" aria-controls="customizer"><i class="fas fa-pencil-alt px-2"></i><span>Customize</span></button>
         <div class="collapse  customize" id="customizer">
             <div class="card card-body">
                 <label class="my-1 mr-2" for="Layout">Layout</label>
-                <select class="form-control form-control-sm">
-                    <option selected>Default</option>
-                    <option value="1">Mini</option>
-                    <option value="2">Top-nav</option>
+                <select class="Layout" class="form-control form-control-sm">
+                    <option value="default">default</option>
+                    <option value="mini">mini</option>
+                    <option value="top-nav">top-nav</option>
                 </select>
             </div>
         </div>
@@ -171,21 +400,71 @@
             </div>
         </div>
     </footer>
-    <script src="assets/libs/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/jquery/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="assets/libs/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/libs/chartjs/Chart.min.js"></script>
-    <script src="assets/libs/malihu-custom/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/libs/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.min.js"></script>
+    <script src="assets/libs/sweetalert2/sweetalert.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.primary').sparkline([10, 8, 5, 7, 4, 4, 4, 3, 4, 5, 6, 5, 8], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#007bff'
+            });
+            $('.warning').sparkline([10, 8, 5, 7, 4, 4, 1, 4, 5, 6, 6, 7, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#ffc107'
+            });
+            $('.info').sparkline([10, 8, 5, 7, 4, 4, 4, 6, 4, 4, 6, 5, 4, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#17a2b8'
+            });
+            $('.danger').sparkline([10, 8, 5, 7, 10, 8, 5, 7, 4, 4, 1], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#dc3545'
+            });
+        });
+    </script>
+    <script>
+        $(".media").click(() => {
+            $('.chat').html('Hello World');
+        });
+
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("select.Layout").change(function() {
+                var selectedLayout = $(this).children("option:selected").val();
+                $("body").removeClass('mini top-nav').addClass(selectedLayout)
+
+            });
+        });
+    </script>
     <div class="customizer">
         <button class="btn btn-primary btn-sm rounded  shadow-sm text-white" type="button" data-toggle="collapse" data-target="#customizer" aria-expanded="false" aria-controls="customizer"><i class="fas fa-pencil-alt px-2"></i><span>Customize</span></button>
         <div class="collapse  customize" id="customizer">
             <div class="card card-body">
                 <label class="my-1 mr-2" for="Layout">Layout</label>
-                <select class="form-control form-control-sm">
-                    <option selected>Default</option>
-                    <option value="1">Mini</option>
-                    <option value="2">Top-nav</option>
+                <select class="Layout" class="form-control form-control-sm">
+                    <option value="default">default</option>
+                    <option value="mini">mini</option>
+                    <option value="top-nav">top-nav</option>
                 </select>
             </div>
         </div>
@@ -197,12 +476,62 @@
             </div>
         </div>
     </footer>
-    <script src="assets/libs/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/jquery/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="assets/libs/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/libs/chartjs/Chart.min.js"></script>
-    <script src="assets/libs/malihu-custom/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/libs/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.min.js"></script>
+    <script src="assets/libs/sweetalert2/sweetalert.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.primary').sparkline([10, 8, 5, 7, 4, 4, 4, 3, 4, 5, 6, 5, 8], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#007bff'
+            });
+            $('.warning').sparkline([10, 8, 5, 7, 4, 4, 1, 4, 5, 6, 6, 7, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#ffc107'
+            });
+            $('.info').sparkline([10, 8, 5, 7, 4, 4, 4, 6, 4, 4, 6, 5, 4, 4], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#17a2b8'
+            });
+            $('.danger').sparkline([10, 8, 5, 7, 10, 8, 5, 7, 4, 4, 1], {
+                type: 'bar',
+                height: '35',
+                width: '100%',
+                barColor: '#dc3545'
+            });
+        });
+    </script>
+    <script>
+        $(".media").click(() => {
+            $('.chat').html('Hello World');
+        });
+
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("select.Layout").change(function() {
+                var selectedLayout = $(this).children("option:selected").val();
+                $("body").removeClass('mini top-nav').addClass(selectedLayout)
+
+            });
+        });
+    </script>
 </body>
 
 </html>
