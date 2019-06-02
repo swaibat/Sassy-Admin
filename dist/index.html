@@ -347,7 +347,7 @@
                         chat Requests <span class="badge badge-primary float-right mt-n3">4 messages</span>
                     </div>
                     <div class="card-body  p-2">
-                        <div class="threads  ">
+                        <div class="threads">
                             <div class="input-group mb-2">
                                 <span class="input-group-prepend">
                                     <span class="input-group-text">
@@ -445,8 +445,8 @@
                         </div>
 
                         <!-- chat conversation -->
-                        <div class="conversation">
-                            <div class="btn btn-xs  btn-primary mb-2">back</div>
+                        <div class="conversation d-none">
+                            <div id="back" class="btn btn-xs  btn-primary mb-2">back</div>
                             <div class="chat ">
                                 <div class="d-flex justify-content-start mb-2">
                                     <div class="bubble bubble-left bg-light">
@@ -558,8 +558,14 @@
     </script>
     <script>
         $(".media").click(() => {
-            $('.chat').html('Hello World');
+            $('.threads').addClass('d-none');
+            $('.conversation').removeClass('d-none');
         });
+        $("#back").click(() => {
+            $('.threads').removeClass('d-none');
+            $('.conversation').addClass('d-none');
+        });
+
 
         $(document).ready(function() {
             $('#example').DataTable();
