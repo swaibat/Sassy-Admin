@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow-sm">
     <!-- [ Left-navigation ] -->
       <a class="navbar-brand p-0" href="#"><img class="avatar" src="{{root}}assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
       <div class="d-flex lr-only">
@@ -9,7 +9,7 @@
     </div>
     <!-- [ side-navigation ] -->
     <div class="collapse navbar-collapse  order-sm-last order-lg-0 " id="navbarCollapse">
-        <ul class="navbar-nav mr-auto sidenav bg-white scrollable" id="navAccordion">
+        <ul class="navbar-nav mr-auto sidenav bg-white" id="navAccordion">
             {{#each navigation}}
             <li class="nav-item p-1  {{#ifpage page }}active{{/ifpage}} {{#each nav}} {{#ifpage name }}active{{/ifpage}} {{/each}}" id="hasSubItems" data-toggle="collapse" data-target="#{{title}}" aria-controls="{{title}}" aria-expanded="false">
                 <a href="{{link}}" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="{{title}}"><i class="{{icon}}"></i><span class="pl-3 title">{{title}}</span></a>
