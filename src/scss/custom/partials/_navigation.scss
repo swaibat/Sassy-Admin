@@ -2,7 +2,7 @@
     margin: .4rem -1rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 767.98px) {
     .sidenav {
       position: absolute;
       top: 0;
@@ -31,7 +31,6 @@
     @include media-breakpoint-down(lg) {
         box-shadow: none;
         height: 70vh;
-        width: 100%;
         border-top: 2px solid #f2f8f9;
     }
     .nav-item {

@@ -10,8 +10,7 @@
 @import "@fortawesome/regular";
 @import "@fortawesome/brands.scss";
 
-// global
-@import "custom/global";
+
 
 // Utilities
 @import "custom/components";
@@ -27,4 +26,9 @@
 
 // pages
 @import "custom/pages/pages";
-@import "custom/pages/docs"
+@import "custom/pages/docs";
+
+// media
+@import "custom/media";
+// global
+@import "custom/global";

@@ -3,11 +3,11 @@
 <html lang="en">
     {{>head}}
 <body>
-    {{#ifpage 'login' 'register' 'contact'  '404' 'faq' 'docs'}}
+    {{#ifpage 'login' 'register' 'contact' 'docs'}}
         {{> body}}
         {{> footer}}
     {{/ifpage}}
-    {{#unlesspage 'login' 'register' 'contact'  '404' 'faq' 'docs'}}
+    {{#unlesspage 'login' 'register' 'contact' 'docs'}}
     <main role="main" class="content-wrapper">
         {{> navigation}}
         {{> breadcrumb}}
@@ -16,6 +16,9 @@
          </div>
     </main>
     {{/unlesspage}}
+
+    {{#unlesspage 'docs'}}
     {{> footer}}
+    {{/unlesspage}}
     </body>
 </html>
