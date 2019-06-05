@@ -1,0 +1,74 @@
+// mixins
+
+// transition
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+// border-radius
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;
+}
+
+// box-shadow
+@mixin box-shadow($args...) {
+ 	-webkit-box-shadow: $args;
+	-moz-box-shadow: $args;
+	box-shadow: $args;
+}
+
+// gradient
+@mixin linear-gradient($top, $bottom){
+    background: $top;
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom));
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%);
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%);
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%);
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0);
+}
+
+//  mini -layout
+@mixin mini-layout ($nav-size, $top) {
+    .navbar-brand {
+        width: $spacer*3;
+        margin-left: -.6rem;
+        border-right: solid 1px #007bff;
+        b {display: none;}
+    }
+    .content-wrapper {
+        margin-left: $nav-size !important;
+    }
+    .sidenav {
+        position: $absolute;
+        margin-top: $top;
+        width: $nav-size;
+        .nav-item {
+            padding-bottom: $spacer/2 !important;
+        }
+        .nav-link-collapse {
+            margin-left: $spacer/2;
+        }
+        .nav-second-level {
+            position: $absolute;
+            margin-top: -$top + $spacer;
+            margin-left: $nav-size;
+            z-index: 100;
+            min-width: 180px;
+            border-radius: 7px;
+            box-shadow: 0 $spacer $spacer*3 rgba(0, 0, 0, .175) !important;
+        }
+        .title,.navbar-brand span {display: none;}
+    }
+    .footer {
+        margin-left: $nav-size;
+        width: calc(100% - $nav-size);
+    }
+}
