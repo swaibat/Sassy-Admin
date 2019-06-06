@@ -11,19 +11,9 @@
 .sidenav {
     top: 0;
     left: 0;
-    width: 11rem;
-    height: calc(100vh - 3.5rem);
-    box-shadow: $box-shadow-sm-right;
-    border-top: solid 1px #f7f9fb;
-    position: absolute;
     -ms-flex-direction: column;
     flex-direction: column !important;
-    @include transition(.4s ease all);
-    @include media-breakpoint-down(lg) {
-        box-shadow: none;
-        height: 70vh;
-        border-top: 2px solid #f2f8f9;
-    }
+    border-top: .2rem solid $body-bg;
     .nav-item {
         &:hover {
             background: lighten( $primary, 49%);
@@ -53,7 +43,7 @@
 .nav-second-level {
     list-style: none;
     margin-left: -$spacer;
-    font-size: .9rem;
+    font-size: $spacer - .1rem;
     .nav-link-text .nav-check {
         margin-right: .5rem;
         &:before {
