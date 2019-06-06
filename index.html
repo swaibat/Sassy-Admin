@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>index</title>
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/libs/datatables/datatables.min.css">
     <link rel="stylesheet" href="assets/libs/iziToast/iziToast.min.css">
@@ -17,7 +17,7 @@
     <main role="main" class="content-wrapper">
         <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow-sm">
             <!-- [ Left-navigation ] -->
-            <a class="navbar-brand p-0" href="#"><img class="avatar" src="assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
+            <a class="navbar-brand p-0 " href="#"><img class="avatar" src="assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
             <div class="d-flex lr-only">
                 <div class="js-hamburger mt-2">
                     <div class="hamburger-toggle"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
@@ -25,7 +25,7 @@
                 <input class="w-100 mx-4 border-0" type="text" name="" placeholder="search . . .">
             </div>
             <!-- [ side-navigation ] -->
-            <div class="collapse navbar-collapse  order-sm-last order-lg-0 " id="navbarCollapse">
+            <div class="collapse navbar-collapse order-lg-0 " id="navbarCollapse">
                 <ul class="navbar-nav mr-auto sidenav bg-white" id="navAccordion">
                     <li class="nav-item p-1  active " id="hasSubItems" data-toggle="collapse" data-target="#dashboard" aria-controls="dashboard" aria-expanded="false">
                         <a href="index.html" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" data-placement="right" title="dashboard"><i class="fas fa-house-damage"></i><span class="pl-3 title">dashboard</span></a>
@@ -175,7 +175,7 @@
         </nav>
         <div class="row page-content m-0">
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
+                <div class="card drop-anim">
                     <div class="card-header bg-primary pt-1 pb-1">
                         <p class="text-white">Users<small class="float-right">Weekly stats</small></p>
                     </div>
@@ -192,7 +192,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
+                <div class="card drop-anim">
                     <div class="card-header bg-warning pt-1 pb-1">
                         <p class="text-white">page Views<small class="float-right">Weekly stats</small></p>
                     </div>
@@ -209,7 +209,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
+                <div class="card drop-anim">
                     <div class="card-header bg-info pt-1 pb-1">
                         <p class="text-white">Sales<small class="float-right">Weekly stats</small></p>
                     </div>
@@ -226,7 +226,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
+                <div class="card drop-anim">
                     <div class="card-header bg-danger pt-1 pb-1">
                         <p class="text-white">Products<small class="float-right">Weekly stats</small></p>
                     </div>
@@ -356,7 +356,7 @@
                                 </span>
                                 <input type="search" class="form-control">
                             </div>
-                            <ul class="media-list media-list-users list-group chat">
+                            <ul class="media-list media-list-users list-group chat drop-anim">
                                 <li class="list-group-item">
                                     <div class="media w-100">
                                         <img class="avatar rounded-circle mr-3" src="assets/images/theo.jpg">
@@ -447,7 +447,7 @@
                         <!-- chat conversation -->
                         <div class="conversation d-none">
                             <div id="back" class="btn btn-xs  btn-primary mb-2">back</div>
-                            <div class="chat ">
+                            <div class="chat drop-anim">
                                 <div class="d-flex justify-content-start mb-2">
                                     <div class="bubble bubble-left bg-light">
                                         Hi, how are you samim?
@@ -501,7 +501,7 @@
     </main>
 
     <div class="customizer">
-        <button class="btn btn-primary btn-sm rounded  shadow-sm text-white" type="button" data-toggle="collapse" data-target="#customizer" aria-expanded="false" aria-controls="customizer"><i class="fas fa-pencil-alt px-2"></i><span>Customize</span></button>
+        <button class="btn bg-white btn-sm rounded  shadow-sm text-primary" type="button" data-toggle="collapse" data-target="#customizer" aria-expanded="false" aria-controls="customizer"><i class="fas fa-pencil-alt px-2"></i><span>Customize</span></button>
         <div class="collapse  customize" id="customizer">
             <div class="card card-body">
                 <label class="my-1 mr-2" for="Layout">Layout</label>
@@ -525,7 +525,7 @@
     <script src="assets/libs/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/libs/chartjs/Chart.min.js"></script>
     <script src="assets/libs/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="assets/libs/sweetalert2/sweetalert.min.js"></script>
     <script src="assets/libs/iziToast/iziToast.min.js" type="text/javascript"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/libs/sparkline/jquery.sparkline.min.js"></script>
