@@ -46,11 +46,11 @@
                             <li><a class="nav-link " href="typography.html"><span class="nav-link-text "><span class="nav-check"></span>typography</span></a></li>
                         </ul>
                     </li>
-                    <li class="nav-item p-1       " id="hasSubItems" data-toggle="collapse" data-target="#utilities" aria-controls="utilities" aria-expanded="false">
+                    <li class="nav-item p-1      active " id="hasSubItems" data-toggle="collapse" data-target="#utilities" aria-controls="utilities" aria-expanded="false">
                         <a href="#" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" data-placement="right" title="utilities"><i class="fas fa-wrench"></i><span class="pl-3 title">utilities</span></a>
-                        <ul class="nav-second-level bg-white rounded-bottom collapse    " id="utilities" data-parent="#navAccordion">
+                        <ul class="nav-second-level bg-white rounded-bottom collapse   show " id="utilities" data-parent="#navAccordion">
                             <li><a class="nav-link " href="grid.html"><span class="nav-link-text "><span class="nav-check"></span>grid</span></a></li>
-                            <li><a class="nav-link " href="flex-box.html"><span class="nav-link-text "><span class="nav-check"></span>flex-box</span></a></li>
+                            <li><a class="nav-link active" href="flexbox.html"><span class="nav-link-text "><span class="nav-check"></span>flexbox</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-item p-1       " id="hasSubItems" data-toggle="collapse" data-target="#forms" aria-controls="forms" aria-expanded="false">
@@ -174,142 +174,137 @@
             </ol>
         </nav>
         <div class="row page-content m-0">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card my-3 bg-white">
-                                <div class="card-header shadow-sm  bg-white b-0">
-                                    Radar
-                                    <div class="btn-group float-right text-white">
 
-                                        <button type="button" class="btn btn-sm btn-primary " data-target="#user-table" aria-expanded="true" aria-controls="user-table"><span>&#8212;</span> </button>
-                                        <button type="button" class="btn btn-sm btn-primary"><span>&#10006;</span> </button>
-                                    </div>
-                                </div>
-                                <!--c-head-->
-                                <div class="card-body">
-                                    <div class="d-flex p-3 bg-light text-white ">
-                                        <div class="p-2 bg-info">Flex item 1</div>
-                                        <div class="p-2 bg-secondary">Flex item 2</div>
-                                        <div class="p-2 bg-primary">Flex item 3</div>
-                                    </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card my-3 bg-white">
+                            <div class="card-header card-header-sm  bg-white b-0 overflow-hidden">
+                                default flex
+                                <div class="btn-group btn-group-xs btn-group-win float-right">
+                                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#w1" aria-expanded="false" aria-controls="w1"><span>&#8212;</span> </button>
+                                    <button type="button" class="btn btn-primary"><span>&#10006;</span> </button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card my-3 bg-white">
-                                <div class="card-header shadow-sm  bg-white b-0">
-                                    Radar
-                                    <div class="btn-group float-right text-white">
-
-                                        <button type="button" class="btn btn-sm btn-primary " data-target="#user-table" aria-expanded="true" aria-controls="user-table"><span>&#8212;</span> </button>
-                                        <button type="button" class="btn btn-sm btn-primary"><span>&#10006;</span> </button>
-                                    </div>
-                                </div>
-                                <!--c-head-->
-                                <div class="card-body">
-                                    <div class="d-inline-flex p-3 bg-light text-white">
-                                        <div class="p-2 bg-info">Flex item 1</div>
-                                        <div class="p-2 bg-secondary">Flex item 2</div>
-                                        <div class="p-2 bg-primary">Flex item 3</div>
-                                    </div>
+                            <!--c-head-->
+                            <div class="card-body collapse show" id="w1">
+                                <div class="d-flex p-3 bg-light text-white ">
+                                    <div class="p-2 bg-info">Flex item 1</div>
+                                    <div class="p-2 bg-secondary">Flex item 2</div>
+                                    <div class="p-2 bg-primary">Flex item 3</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card my-3 bg-white">
-                        <div class="card-header shadow-sm  bg-white b-0">
-                            Radar
-                            <div class="btn-group float-right text-white">
-
-                                <button type="button" class="btn btn-sm btn-primary " data-target="#user-table" aria-expanded="true" aria-controls="user-table"><span>&#8212;</span> </button>
-                                <button type="button" class="btn btn-sm btn-primary"><span>&#10006;</span> </button>
+                    <div class="col-md-6">
+                        <div class="card my-3 bg-white">
+                            <div class="card-header card-header-sm  bg-white b-0 overflow-hidden">
+                                Inline flex
+                                <div class="btn-group btn-group-xs btn-group-win float-right">
+                                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#w2" aria-expanded="false" aria-controls="w2"><span>&#8212;</span> </button>
+                                    <button type="button" class="btn btn-primary"><span>&#10006;</span> </button>
+                                </div>
                             </div>
-                        </div>
-                        <!--c-head-->
-                        <div class="card-body">
-                            <div class="d-flex flex-row bg-light">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
-                            </div>
-
-                            <div class="d-flex flex-row-reverse bg-light mt-2">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
+                            <!--c-head-->
+                            <div class="card-body collapse show" id="w2">
+                                <div class="d-inline-flex p-3 bg-light text-white">
+                                    <div class="p-2 bg-info">Flex item 1</div>
+                                    <div class="p-2 bg-secondary">Flex item 2</div>
+                                    <div class="p-2 bg-primary">Flex item 3</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card my-3 bg-white">
-                        <div class="card-header shadow-sm  bg-white b-0">
-                            Radar
-                            <div class="btn-group float-right text-white">
-
-                                <button type="button" class="btn btn-sm btn-primary " data-target="#user-table" aria-expanded="true" aria-controls="user-table"><span>&#8212;</span> </button>
-                                <button type="button" class="btn btn-sm btn-primary"><span>&#10006;</span> </button>
-                            </div>
-                        </div>
-                        <!--c-head-->
-                        <div class="card-body">
-                            <div class="d-flex flex-column">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
-                            </div>
-
-                            <div class="d-flex flex-column-reverse mt-2">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
-                            </div>
+                <div class="card my-3 bg-white">
+                    <div class="card-header card-header-sm  bg-white b-0 overflow-hidden">
+                        Horizontal Direction
+                        <div class="btn-group btn-group-xs btn-group-win float-right">
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#w3" aria-expanded="false" aria-controls="w3"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-primary"><span>&#10006;</span> </button>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="card my-3 bg-white">
-                        <div class="card-header shadow-sm  bg-white b-0">
-                            Radar
-                            <div class="btn-group float-right text-white">
-
-                                <button type="button" class="btn btn-sm btn-primary " data-target="#user-table" aria-expanded="true" aria-controls="user-table"><span>&#8212;</span> </button>
-                                <button type="button" class="btn btn-sm btn-primary"><span>&#10006;</span> </button>
-                            </div>
+                    <!--c-head-->
+                    <div class="card-body collapse show" id="w3">
+                        <div class="d-flex flex-row bg-light">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
                         </div>
-                        <!--c-head-->
-                        <div class="card-body">
-                            <div class="d-flex justify-content-start bg-light mb-3">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
-                            </div>
-                            <div class="d-flex justify-content-end bg-light mb-3">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
-                            </div>
-                            <div class="d-flex justify-content-center bg-light mb-3">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
-                            </div>
-                            <div class="d-flex justify-content-between bg-light mb-3">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
-                            </div>
-                            <div class="d-flex justify-content-around bg-light mb-3">
-                                <div class="p-2 bg-info">Flex item 1</div>
-                                <div class="p-2 bg-secondary">Flex item 2</div>
-                                <div class="p-2 bg-primary">Flex item 3</div>
-                            </div>
+
+                        <div class="d-flex flex-row-reverse bg-light mt-2">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card my-3 bg-white">
+                    <div class="card-header card-header-sm  bg-white b-0 overflow-hidden">
+                        Vertical Direction
+                        <div class="btn-group btn-group-xs btn-group-win float-right">
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#w3" aria-expanded="false" aria-controls="w4"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-primary"><span>&#10006;</span> </button>
+                        </div>
+                    </div>
+                    <!--c-head-->
+                    <div class="card-body collapse show" id="w4">
+                        <div class="d-flex flex-column">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
+                        </div>
+
+                        <div class="d-flex flex-column-reverse mt-2">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card my-3 bg-white">
+                    <div class="card-header card-header-sm  bg-white b-0 overflow-hidden">
+                        Justify Content
+                        <div class="btn-group btn-group-xs btn-group-win float-right">
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#w5" aria-expanded="false" aria-controls="w5"><span>&#8212;</span> </button>
+                            <button type="button" class="btn btn-primary"><span>&#10006;</span> </button>
+                        </div>
+                    </div>
+                    <!--c-head-->
+                    <div class="card-body collapse show" id="w3">
+                        <div class="d-flex justify-content-start bg-light mb-3">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
+                        </div>
+                        <div class="d-flex justify-content-end bg-light mb-3">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
+                        </div>
+                        <div class="d-flex justify-content-center bg-light mb-3">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
+                        </div>
+                        <div class="d-flex justify-content-between bg-light mb-3">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
+                        </div>
+                        <div class="d-flex justify-content-around bg-light mb-3">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-secondary">Flex item 2</div>
+                            <div class="p-2 bg-primary">Flex item 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
