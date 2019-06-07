@@ -65,5 +65,8 @@
         }
         .title,.navbar-brand span {display: none;}
     }
+    .tooltip.show {
+        display: inline !important;
+    }
     @include layout ($nav-size, $top)
 }

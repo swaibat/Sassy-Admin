@@ -4,6 +4,9 @@
     #navbarCollapse{
         order: 13 !important;
     }
+    .tooltip.show {
+        display: none !important;
+    }
 }
 
 // // Large devices (desktops, 992px and up)
