@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow-sm">
     <!-- [ Left-navigation ] -->
-      <a class="navbar-brand p-0" href="#"><img class="avatar" src="{{root}}assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
+      <a class="navbar-brand p-0 " href="#"><img class="avatar" src="{{root}}assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
       <div class="d-flex lr-only">
             <div class="js-hamburger mt-2">
                 <div class="hamburger-toggle"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
@@ -8,7 +8,7 @@
         <input class="w-100 mx-4 border-0" type="text" name="" placeholder="search . . .">
     </div>
     <!-- [ side-navigation ] -->
-    <div class="collapse navbar-collapse  order-sm-last order-lg-0 " id="navbarCollapse">
+    <div class="collapse navbar-collapse order-lg-0 " id="navbarCollapse">
         <ul class="navbar-nav mr-auto sidenav bg-white" id="navAccordion">
             {{#each navigation}}
             <li class="nav-item p-1  {{#ifpage page }}active{{/ifpage}} {{#each nav}} {{#ifpage name }}active{{/ifpage}} {{/each}}" id="hasSubItems" data-toggle="collapse" data-target="#{{title}}" aria-controls="{{title}}" aria-expanded="false">

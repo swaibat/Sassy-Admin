@@ -1,0 +1,12 @@
+// clip path mixin
+
+/*examplas
+* @circle - circle(50% at 50% 50%)
+* @triangle - polygon(50% 0%, 0% 100%, 100% 100%);
+*/
+// 
+@mixin clip-path($args...){
+    -webkit-clip-path: $args;
+    clip-path: $args;
+}
+

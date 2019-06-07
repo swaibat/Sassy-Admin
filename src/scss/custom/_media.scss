@@ -1,18 +1,26 @@
 
 // // Extra small devices (portrait phones, less than 576px)
-// @media (max-width: 575.98px) {}
+@media (max-width: 767.98px) {
+    #navbarCollapse{
+        order: 13 !important;
+    }
+    .tooltip.show {
+        display: none !important;
+    }
+}
 
 // // Large devices (desktops, 992px and up)
 @media (min-width: 767.98px) and (max-width: 1199.98px) {
-    @include mini-layout(3.5rem,3.7rem);
+    @include mini-layout($nav-md,3.7rem);
 }
 
 @media (min-width: 1199.98px) {
     .sidenav {
-        margin-top: 3.8rem !important;
-        width: 11rem;
-        margin-top: 3.5rem;  
-    }
+        position: $absolute;
+        width: $nav-lg;
+        height: calc(100vh - 3.5rem);
+        margin-top: 3.7rem;
+      }
     .content-wrapper {
         margin-left: 11.5rem;
     }

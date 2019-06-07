@@ -9,20 +9,6 @@
 	transition: $args;
 }
 
-// border-radius
-@mixin border-radius($radius) {
-	-webkit-border-radius: $radius;
-	border-radius: $radius;
-	background-clip: padding-box;
-}
-
-// box-shadow
-@mixin box-shadow($args...) {
- 	-webkit-box-shadow: $args;
-	-moz-box-shadow: $args;
-	box-shadow: $args;
-}
-
 // gradient
 @mixin linear-gradient($top, $bottom){
     background: $top;
@@ -35,14 +21,8 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0);
 }
 
-//  mini -layout
-@mixin mini-layout ($nav-size, $top) {
-    .navbar-brand {
-        width: $spacer*3;
-        margin-left: -.6rem;
-        border-right: solid 1px #007bff;
-        b {display: none;}
-    }
+//  layout
+@mixin layout ($nav-size, $top) {
     .content-wrapper {
         margin-left: $nav-size !important;
     }
@@ -50,6 +30,24 @@
         position: $absolute;
         margin-top: $top;
         width: $nav-size;
+        .nav-item {
+            padding-bottom: $spacer/2 !important;
+        }
+    }
+    .footer {
+        margin-left: $nav-size;
+        width: calc(100% - #{$nav-size});
+    }
+}
+
+@mixin mini-layout ($nav-size, $top) {
+    .navbar-brand {
+        width: $spacer*3;
+        margin-left: -.6rem;
+        border-right: solid 1px $primary;
+        b {display: none;}
+    }
+    .sidenav {
         .nav-item {
             padding-bottom: $spacer/2 !important;
         }
@@ -67,8 +65,8 @@
         }
         .title,.navbar-brand span {display: none;}
     }
-    .footer {
-        margin-left: $nav-size;
-        width: calc(100% - $nav-size);
+    .tooltip.show {
+        display: inline !important;
     }
+    @include layout ($nav-size, $top)
 }

@@ -1,26 +1,4 @@
-.customizer{
-    bottom: .7rem;
-    font-size: 14px;
-    position: fixed;
-    right: .4rem;
-    z-index: 1030;
-    .collapse{
-        width:13rem;
-    }
-    span{  
-        @include media-breakpoint-down(lg) {
-            display: none;
-        }
-    }
-}
-.btn-group-win{
-    margin-right: -1.3rem;
-    margin-top: -.3rem;
-}
-.customizer.bottom{
-    bottom: 4.1rem;
-}
-
+// button extra small
 .btn-group-xs > .btn, .btn-xs {
     padding: .15rem .5rem;
     font-size: .675rem;
@@ -30,15 +8,34 @@
     border-bottom-left-radius: 0.18rem;
 }
 
+// spot-label
+.spot-label{
+    width: $spacer;
+    height: $spacer;
+    border-radius: 50%;
+    margin:.1rem .5rem;
+  }
+
+// pill button
 .btn-pill {
-    min-width: 3rem;
-    height: 3rem;
-    font-size: 2rem;
-    color: #fff;
+    min-width: $spacer * 3;
+    height: $spacer * 3;
+    font-size: $spacer * 2;
+    color: $white;
     text-align: center;
     line-height: 1.4;
 }
 
+// circle button
+.btn-circle {
+    height: $spacer * 3;
+    width: $spacer * 3;
+    overflow:hidden;
+    line-height: 1.5;
+    border-radius: 50%;
+}
+
+// badge circle
 .badge-circle {
     width: 1.2rem;
     height: 1.2rem;
@@ -49,6 +46,7 @@
     overflow: hidden;
 }
 
+// bubble chat
 .bubble{
     padding: 10px 15px;
     margin: .3rem 0;
@@ -70,7 +68,7 @@
     margin-left: 0;
     margin-right: 2px;
     border-right: 0;
-    border-left: 6px solid #007bff;
+    border-left: 6px solid $primary;
     margin-top: -3px;
 }
 
@@ -87,4 +85,30 @@
     border-bottom: 6px solid transparent;
     border-right: 6px solid #f5f8fa;
     margin-top: -.2rem;
+}
+
+// customizer
+.customizer{
+    bottom: .7rem;
+    font-size: 14px;
+    position: fixed;
+    right: .4rem;
+    z-index: 1030;
+    .collapse{
+        width:13rem;
+    }
+    span{  
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+}
+
+
+.btn-group-win{
+    margin-right: -1.3rem;
+    margin-top: -.3rem;
+}
+.customizer.bottom{
+    bottom: 4.1rem;
 }
