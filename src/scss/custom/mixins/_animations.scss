@@ -1,0 +1,7 @@
+// swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both
+@mixin animation($args...){
+	-webkit-animation: $args;
+	        animation:$args;
+}
+// slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  

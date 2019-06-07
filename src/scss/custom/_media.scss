@@ -1,26 +1,45 @@
 
 // // Extra small devices (portrait phones, less than 576px)
-// @media (max-width: 575.98px) {}
+@media (max-width: 767.98px) {
+    #navbarCollapse{
+        order: 13 !important;
+    }
+    .tooltip.show {
+        display: none !important;
+    }
+}
 
 // // Large devices (desktops, 992px and up)
 @media (min-width: 767.98px) and (max-width: 1199.98px) {
-    @include mini-layout;
+    @include mini-layout($nav-md,3.7rem);
 }
 
 @media (min-width: 1199.98px) {
     .sidenav {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 11rem;
+        position: $absolute;
+        width: $nav-lg;
         height: calc(100vh - 3.5rem);
-        margin-top: 3.5rem;
-        background: #343a40;
-        box-sizing: border-box;
-        border-top: 1px solid rgba(0, 0, 0, 0.3);
-    }
+        margin-top: 3.7rem;
+      }
     .content-wrapper {
         margin-left: 11.5rem;
     }
+    .tooltip.show {
+        display: none !important;
+    }
 }
-    
+
+.tooltip {
+	width: 120px;
+	&-inner {
+		padding: 8px 10px;
+		color: #fff;
+		text-align: center;
+		background-color: #051835;
+		font-size: 12px;
+		border-radius: 3px;
+	}
+	&-arrow {
+		border-right-color: #051835 !important;
+	}
+}  

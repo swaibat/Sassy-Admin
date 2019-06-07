@@ -2,18 +2,7 @@
     margin: .4rem -1rem;
 }
 
-@media (min-width: 767.98px) {
-    .sidenav {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 11rem;
-      height: calc(100vh - 3.5rem);
-      margin-top: 3.8rem;
-      box-sizing: border-box;
-      border-top: 1px solid rgba(0, 0, 0, 0.3);
-    }
-  }
+
 .scrollable {
     height: 95vh !important;
     overflow: hidden !important;
@@ -22,17 +11,9 @@
 .sidenav {
     top: 0;
     left: 0;
-    width: 11rem;
-    height: calc(100vh - 3.5rem);
-    box-shadow: $box-shadow-sm-right;
-    border-top: solid 1px #f7f9fb;
     -ms-flex-direction: column;
     flex-direction: column !important;
-    @include media-breakpoint-down(lg) {
-        box-shadow: none;
-        height: 70vh;
-        border-top: 2px solid #f2f8f9;
-    }
+    border-top: .2rem solid $body-bg;
     .nav-item {
         &:hover {
             background: lighten( $primary, 49%);
@@ -54,12 +35,6 @@
         width: 2.5px;
         left: 0;
         background-color: $primary;
-        opacity: 1;
-        -webkit-transition: all .5s ease-in-out;
-        -moz-transition: all .5s ease-in-out;
-        -ms-transition: all .5s ease-in-out;
-        -o-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
         z-index: 1030;
         margin-top: .1rem;
     }
@@ -68,7 +43,7 @@
 .nav-second-level {
     list-style: none;
     margin-left: -$spacer;
-    font-size: .9rem;
+    font-size: $spacer - .1rem;
     .nav-link-text .nav-check {
         margin-right: .5rem;
         &:before {

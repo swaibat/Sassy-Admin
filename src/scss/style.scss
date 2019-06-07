@@ -10,12 +10,15 @@
 @import "@fortawesome/regular";
 @import "@fortawesome/brands.scss";
 
+// mixins
+@import "custom/mixins/mixins";
+@import "custom/mixins/animations";
+@import "custom/mixins/clip-path";
 
 
 // Utilities
 @import "custom/components";
 @import "custom/utilities";
-@import "custom/mixins";
 @import "custom/partials";
 
 // components

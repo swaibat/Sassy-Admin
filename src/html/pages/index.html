@@ -1,6 +1,6 @@
 {{#each stat-cards}}
 <div class="col-lg-3 col-md-6 mb-4">
-    <div class="card card1 ">
+    <div class="card drop-anim">
         <div class="card-header bg-{{name}} pt-1 pb-1">
             <p class="text-white">{{title}}<small class="float-right">Weekly stats</small></p>
         </div>
@@ -106,7 +106,7 @@
                     </span>
                     <input type="search" class="form-control">
                 </div>
-                <ul class="media-list media-list-users list-group chat">
+                <ul class="media-list media-list-users list-group chat drop-anim">
                     {{#each chat}}
                     <li class="list-group-item">
                         <div class="media w-100">
@@ -127,7 +127,7 @@
             <!-- chat conversation -->
             <div class="conversation d-none">
                 <div id="back" class="btn btn-xs  btn-primary mb-2">back</div>
-            <div class="chat ">
+            <div class="chat drop-anim">
                 <div class="d-flex justify-content-start mb-2">
                     <div class="bubble bubble-left bg-light">
                         Hi, how are you samim?

@@ -22,7 +22,7 @@
   link: '#'
   nav:
     - name: grid
-    - name: flex-box
+    - name: flexbox
 
 - title: forms
   icon: fas fa-file-alt

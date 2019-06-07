@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow-sm">
     <!-- [ Left-navigation ] -->
-      <a class="navbar-brand p-0" href="#"><img class="avatar" src="{{root}}assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
+      <a class="navbar-brand p-0 " href="#"><img class="avatar" src="{{root}}assets/images/logo.svg" alt="" width="45"><b class="ml-2">Sassy</b></a>
       <div class="d-flex lr-only">
             <div class="js-hamburger mt-2">
                 <div class="hamburger-toggle"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
@@ -8,11 +8,11 @@
         <input class="w-100 mx-4 border-0" type="text" name="" placeholder="search . . .">
     </div>
     <!-- [ side-navigation ] -->
-    <div class="collapse navbar-collapse  order-sm-last order-lg-0 " id="navbarCollapse">
+    <div class="collapse navbar-collapse order-lg-0 " id="navbarCollapse">
         <ul class="navbar-nav mr-auto sidenav bg-white" id="navAccordion">
             {{#each navigation}}
             <li class="nav-item p-1  {{#ifpage page }}active{{/ifpage}} {{#each nav}} {{#ifpage name }}active{{/ifpage}} {{/each}}" id="hasSubItems" data-toggle="collapse" data-target="#{{title}}" aria-controls="{{title}}" aria-expanded="false">
-                <a href="{{link}}" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" title="{{title}}"><i class="{{icon}}"></i><span class="pl-3 title">{{title}}</span></a>
+                <a href="{{link}}" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" data-placement="right" title="{{title}}"><i class="{{icon}}"></i><span class="pl-3 title">{{title}}</span></a>
                 <ul class="nav-second-level bg-white rounded-bottom collapse{{#each nav}} {{#ifpage name }}show{{/ifpage}} {{/each}}" id="{{title}}" data-parent="#navAccordion">
                     {{#each nav}}
                     <li><a class="nav-link {{#ifpage name }}active{{/ifpage}}" href="{{root}}{{name}}.html"><span class="nav-link-text "><span class="nav-check"></span>{{name}}</span></a></li>
@@ -42,13 +42,13 @@
             </div>
         </div>
 
-        <div class="dropdown-menu notification">
+        <div class="dropdown-menu notification drop-anim">
             <div class="dropdown-item">
                 <small class="mb-0 font-weight-normal float-left"> 7 unread mails</small>
                 <span class="badge badge-info badge-pill float-right">View all</span>
             </div>
             {{#each users}}
-            <a class="dropdown-item d-flex">
+            <a class="dropdown-item d-flex ">
                 <div class="ml-n3"><img src="{{root}}assets/images/{{img}}.jpg" alt="{{name}}" class="avatar rounded-circle"></div>
                 <div class="flex-grow ml-2">
                     <b class="pl-2 p-0">{{name}}<small class="float-right m-0">1 Minutes ago</small></b>
@@ -63,7 +63,7 @@
         <button class="btn  dropdown-toggle p-0 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="{{root}}assets/images/user.svg" alt="" width="40">
         </button>
-        <div class="dropdown-menu account" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-menu account drop-anim" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item my-2" href="#"><i class="icon-user mx-2"></i>Profile</a>
                 <a class="dropdown-item my-2" href="#"><i class="icon-bubbles mx-2"></i>Messages</a>
                 <a class="dropdown-item my-2" href="#"><i class="icon-lock-open mx-2"></i>Lock screen</a>
