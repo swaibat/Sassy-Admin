@@ -1,3 +1,24 @@
-.d-clip{
-    clip-path: polygon(0 0, 100% 0, 99% 5%, 0 70%);
+.clip-circle{
+    clip-path: $circle;
+}
+.clip-ellipse {
+    clip-path:$eclipse;
+}
+.primary-clip {
+    clip-path:$theme-clip;
+}
+.clip-triangle{
+    clip-path: $triangle;
+}
+.clip-hexagon{
+    clip-path: $hexagon;
+}
+.clip-rhombus {
+    clip-path:$rhombus;
+}
+.clip-octagon {
+    clip-path:$octagon;
+}
+.clip-star{
+    clip-path: $star;
 }

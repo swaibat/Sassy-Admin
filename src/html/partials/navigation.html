@@ -9,7 +9,7 @@
     </div>
     <!-- [ side-navigation ] -->
     <div class="collapse navbar-collapse order-lg-0 " id="navbarCollapse">
-        <ul class="navbar-nav mr-auto sidenav bg-white" id="navAccordion">
+        <ul class="navbar-nav mr-auto sidenav bg-white scrollable" id="navAccordion">
             {{#each navigation}}
             <li class="nav-item p-1  {{#ifpage page }}active{{/ifpage}} {{#each nav}} {{#ifpage name }}active{{/ifpage}} {{/each}}" id="hasSubItems" data-toggle="collapse" data-target="#{{title}}" aria-controls="{{title}}" aria-expanded="false">
                 <a href="{{link}}" class="nav-link nav-link-collapse d-flex mx-n1 pl-3" data-toggle="tooltip" data-placement="right" title="{{title}}"><i class="{{icon}}"></i><span class="pl-3 title">{{title}}</span></a>
