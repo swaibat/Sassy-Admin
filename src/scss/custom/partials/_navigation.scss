@@ -4,9 +4,11 @@
 
 
 .scrollable {
-    height: 95vh !important;
+    height: 85vh !important;
     overflow: hidden !important;
+    padding-bottom: 2rem;
 }
+
  // navigation
 .sidenav {
     top: 0;
@@ -25,9 +27,11 @@
     .nav-item.active {
         background: lighten( $primary, 45%);
     }
-    .nav-item.active a {
+    .active{
+        a {
         color: $primary !important;
-    }
+        }
+    } 
     .nav-item.active::before {
         position: absolute;
         content: " ";
@@ -53,6 +57,7 @@
         }
     }
     .nav-link.active {
+        color: $primary !important;
         .nav-link-text .nav-check {
             &:before {
                 @extend %fa-icon;

@@ -1659,3 +1659,72 @@ document.getElementById('randomizeData').addEventListener('click', function() {
 });
 
 // izitoast plugin
+$(function() {
+    /** This code runs when everything has been loaded on the page */
+    /* Inline sparklines take their values from the contents of the tag */
+    $('.inlinesparkline').sparkline(); 
+    
+    $("#sparkline").sparkline([4,6,7,7,4,3,2,1,4,6,4,6,7,7,5,3,4], {
+    type: 'discrete'});
+    
+    $("#sparkline7").sparkline([4,6,7,7,4,3,2,1,4,6,4,6,7,7,5,3,4], {
+    type: 'pie',
+    width: '100%',
+    height: '25',
+    spotColor: '#ffffff'
+    });
+    
+    $("#spark1").sparkline([4,2,3], {
+    type: 'pie',
+    width: '70',
+    height: '50',
+    raw: false}
+    );
+    
+    $("#spark2").sparkline([45,27,34,52,30,59,50], {
+    type: 'bar',
+    width: '70',
+    height: '50',
+    raw: false}
+    );
+    
+    $("#spark3").sparkline([4,27,34,52,54,59,61,68,78,82,85,87,91,93,100], {
+    type: 'inlinebar',
+    width: '100%',
+    height: '50',
+    raw: false}
+    );
+    
+    $("#spark4").sparkline([4,27,34,52,54,59,61,68,78,82,85,87,91,93,100], {
+    type: 'box',
+    width: '100%',
+    height: '50',
+    raw: false}
+    );
+    
+    $("#sparkline2").sparkline([1,1,0,1,-1,-1,1,-1,0,0,1,1], {
+    type: 'tristate'});
+    
+    $("#sparkline3").sparkline([10,12,12,9,7], {
+        type: 'bullet'});
+        
+    $("#sparkline4").sparkline([1,1,2], {
+        type: 'pie'});
+        
+    $("#sparkline5").sparkline([4,27,34,10,54,40,61,68,40,82,20], {
+        type: 'bar'});
+    $("#sparkline6").sparkline([4,27,34,10,54,40,61,68,40,82,20], {
+    type: 'inlinebar'});
+
+    /* Sparklines can also take their values from the first argument 
+    passed to the sparkline() function */
+    var myvalues = [1,3,4,5,3,5];
+    $('.dynamicsparkline').sparkline(myvalues);
+
+    /* The second argument gives options such as chart type */
+    $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: '#059dfe',height:'50'} );
+
+    /* Use 'html' instead of an array of values to pass options 
+    to a sparkline with data in the tag */
+    $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
+});
