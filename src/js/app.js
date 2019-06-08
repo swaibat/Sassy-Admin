@@ -1097,9 +1097,22 @@ $(document).ready(function() {
     });
 });
 
+if($(".sidenav").width() > 57 ){
+    // malihu scroll
+    $(".scrollable").mCustomScrollbar({
+        theme: "dark-thin"
+    });
+}
+
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
+
+// hide tooltip on cclick
+$('[data-toggle="tooltip"]').click(function () {
+$('[data-toggle="tooltip"]').tooltip("hide");
+
+});
   
 // humberger style  
 $(".js-hamburger").click(function() {
@@ -1115,13 +1128,7 @@ $(window).scroll(function() {
     }
 });
 
-// malihu scroll
-$(".scrollable").mCustomScrollbar({
-    scrollButtons: {
-        enable: true
-    },
-    theme: "dark-thin"
-});
+
 
 // stat counter
 $('.box').each(function() {
