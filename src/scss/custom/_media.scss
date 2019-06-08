@@ -1,11 +1,14 @@
 
 // // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 767.98px) {
+    .scrollable {
+        height: 55vh !important;
+        overflow: auto;
+        padding-bottom: 2rem;
+        
+    }
     #navbarCollapse{
         order: 13 !important;
-    }
-    .tooltip.show {
-        display: none !important;
     }
 }
 
@@ -23,9 +26,6 @@
       }
     .content-wrapper {
         margin-left: 11.5rem;
-    }
-    .tooltip.show {
-        display: none !important;
     }
 }
 

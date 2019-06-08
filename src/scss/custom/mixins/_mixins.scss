@@ -48,6 +48,7 @@
         b {display: none;}
     }
     .sidenav {
+        overflow: visible !important;
         .nav-item {
             padding-bottom: $spacer/2 !important;
         }
