@@ -38,3 +38,13 @@
 	transform: translateY(10px);
 	background-color: #1fa2ff;
 }
+// grid page
+.grid{
+	.row{
+		div{
+			background: gainsboro;
+			padding: $spacer;
+			border:solid 2px white
+		}
+	}
+}
