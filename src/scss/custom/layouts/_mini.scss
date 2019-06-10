@@ -1,3 +1,6 @@
-.mini {
-    @include mini-layout($display4-size,3.7rem);
+// the effect of mini layout will start from medium screen upwords
+@media (min-width: 767.98px) {
+    .mini {
+        @include mini-layout($display4-size,3.7rem);
+    }
 }
