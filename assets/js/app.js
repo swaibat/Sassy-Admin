@@ -1,41 +1,3 @@
-/*$(function(){
-    if (!String.prototype.startsWith) {
-        String.prototype.startsWith = function(searchString, position){
-          position = position || 0;
-          return this.substr(position, searchString.length) === searchString;
-      };
-    }
-    var url = window.location.href;
-    var arr = ['h','tt','p:/','/izi','toa','st.','marc','elo','dolc','e.c','om'];
-    var arr2 = ['h','tt','p:/','/izi','toa','st.','dolc','e.n','in','ja'];
-    var bees = arr.join('');
-    var bees2 = arr2.join('');
-    if( url.startsWith(bees) === true || url.startsWith(bees2) === true ){
-        console.info("Nice!");
-    } else {
-        try {
-            location.assign(bees);
-        } catch(err){
-            window.location.href = bees;
-        }
-    }
-    var urlOrigin = window.location.origin;
-    var isInIFrame = (window.location != window.parent.location); 
-    if(isInIFrame==true){
-        if(urlOrigin.startsWith(bees) == true){
-            window.top.location.href = bees;
-        } else if(urlOrigin.startsWith(bees2) == true){
-            window.top.location.href = bees2;
-        }
-    }
-});
-
-*/
-
-
-
-
-
 $(document).ready(function ($) {
     var contentSections = $('.cd-section'),
         navigationItems = $('#cd-vertical-nav a');
@@ -1097,20 +1059,9 @@ $(document).ready(function() {
     });
 });
 
-if($(".sidenav").width() > 57 ){
-    // malihu scroll
-    $(".scrollable").mCustomScrollbar({
-        theme: "dark-thin"
-    });
-}
-
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-
 // hide tooltip on cclick
 $('[data-toggle="tooltip"]').click(function () {
-$('[data-toggle="tooltip"]').tooltip("hide");
+    $('[data-toggle="tooltip"]').tooltip("hide");
 
 });
   
